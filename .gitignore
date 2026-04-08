@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Local build artifacts
+dist/
+release/
+
+# Tauri / Rust
+src-tauri/target/
+src-tauri/gen/schemas
