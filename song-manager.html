@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song Manager</title>
+    <style>
+      body { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 24px; max-width: 760px; }
+      h1 { margin-bottom: 8px; }
+      p { color: #555; }
+      .row { display: grid; gap: 10px; margin: 14px 0; }
+      label { font-size: 14px; font-weight: 600; }
+      input, select, button { font-size: 14px; padding: 10px; border-radius: 8px; border: 1px solid #ddd; }
+      button { cursor: pointer; background: #111; color: #fff; border: none; }
+      button.secondary { background: #f2f2f2; color: #111; border: 1px solid #ddd; }
+      .hint { font-size: 12px; color: #777; }
+      .ok { color: #116329; }
+      .err { color: #a31414; }
+      .status { margin-top: 14px; white-space: pre-wrap; }
+    </style>
+  </head>
+  <body>
+    <h1>Song Manager</h1>
+    <p>Choose project folder once, then upload files and auto update <code>songs.json</code>.</p>
+
+    <div class="row">
+      <button id="pickDir" class="secondary">1) Choose Project Folder</button>
+      <div class="hint">Pick your local folder: <code>njzneverdie</code></div>
+    </div>
+
+    <div class="row">
+      <label>Song ID</label>
+      <input id="id" placeholder="my-song-1" />
+      <label>Title</label>
+      <input id="title" placeholder="My Song 1" />
+      <label>Artist</label>
+      <input id="artist" placeholder="My Artist" />
+      <label>Album</label>
+      <input id="album" placeholder="My Album" />
+      <label>Theme Color</label>
+      <input id="themeColor" value="#F05A66" />
+      <label>Cubes Theme</label>
+      <select id="cubesTheme">
+        <option value="pink">pink</option>
+        <option value="purple">purple</option>
+        <option value="green">green</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label>Audio File (required)</label>
+      <input id="audioFile" type="file" accept=".mp3,.wav,.m4a,.flac,.ogg,.MP3,.WAV,.M4A,.FLAC,.OGG" />
+      <label>Cover Image (optional)</label>
+      <input id="coverFile" type="file" accept=".webp,.png,.jpg,.jpeg,.WEBP,.PNG,.JPG,.JPEG" />
+      <label>Lyrics File (optional)</label>
+      <input id="lrcFile" type="file" accept=".lrc,.txt,.LRC,.TXT" />
+    </div>
+
+    <div class="row">
+      <button id="saveSong">2) Save Song To Assets + songs.json</button>
+      <div class="hint">Requires Chromium browser support for File System Access API.</div>
+    </div>
+
+    <div id="status" class="status"></div>
+    <script type="module" src="/song-manager.js"></script>
+  </body>
+  </html>

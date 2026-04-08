@@ -1,0 +1,13 @@
+[
+  {
+    "id": "my-song-1",
+    "title": "My Song 1",
+    "artist": "My Artist",
+    "album": "My Album",
+    "audioSrc": "/assets/My Song 1.mp3",
+    "lrcSrc": "/assets/My Song 1.lrc",
+    "coverUrl": "/assets/My Song 1.webp",
+    "themeColor": "#F05A66",
+    "cubesTheme": "pink"
+  }
+]
