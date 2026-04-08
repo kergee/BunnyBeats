@@ -33,6 +33,11 @@ jobs:
         with:
           node-version: 20
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
       - name: Build dist folder (macOS/Linux)
         if: runner.os != 'Windows'
         run: |
@@ -48,6 +53,26 @@ jobs:
           New-Item -ItemType Directory -Path dist | Out-Null
           robocopy . dist /E /XD src-tauri dist .git .github
           if ($LASTEXITCODE -gt 7) { exit $LASTEXITCODE }
+          exit 0
+
+      - name: Normalize icon PNGs to RGBA
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pillow
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+
+          icons_dir = Path("src-tauri/icons")
+          if not icons_dir.exists():
+              raise SystemExit("src-tauri/icons not found")
+
+          for path in icons_dir.glob("*.png"):
+              with Image.open(path) as img:
+                  rgba = img.convert("RGBA")
+                  rgba.save(path)
+                  print(f"normalized {path}")
+          PY
 
       - name: Install Linux dependencies
         if: runner.os == 'Linux'
