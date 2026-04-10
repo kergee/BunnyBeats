@@ -11,7 +11,15 @@ fetch("/songs.json", { cache: "no-store" })
     console.warn("songs.json load failed, fallback to built-in playlist", err);
   })
   .finally(() => {
-    import("/assets/index-ifD7iYwv.js").catch((err) => {
-      console.error("main bundle load failed", err);
-    });
+    import("/assets/index-ifD7iYwv.js")
+      .then(() => {
+        // Give React one frame to render before hiding the loading screen
+        requestAnimationFrame(() => {
+          const loading = document.getElementById("app-loading");
+          if (loading) loading.remove();
+        });
+      })
+      .catch((err) => {
+        console.error("main bundle load failed", err);
+      });
   });
