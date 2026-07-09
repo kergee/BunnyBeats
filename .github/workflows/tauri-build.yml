@@ -30,6 +30,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
+        with:
+          lfs: true
+
+      - name: Fetch Git LFS assets
+        run: git lfs pull
 
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
@@ -48,6 +53,10 @@ jobs:
             && echo "manifest.json OK"
           node -e "JSON.parse(require('fs').readFileSync('src-tauri/tauri.conf.json', 'utf8'))" \
             && echo "tauri.conf.json OK"
+
+      - name: Validate Tauri PNG icons
+        run: |
+          node -e "const fs=require('fs');const png='89504e470d0a1a0a';for(const file of ['src-tauri/icons/32x32.png','src-tauri/icons/128x128.png','src-tauri/icons/128x128@2x.png']){const sig=fs.readFileSync(file).subarray(0,8).toString('hex');if(sig!==png)throw new Error(file+' is not a PNG file; got signature '+sig);console.log(file+' OK')}"
 
       - name: Build dist folder (macOS/Linux)
         if: runner.os != 'Windows'
