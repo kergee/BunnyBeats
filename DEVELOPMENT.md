@@ -45,7 +45,7 @@ npm run desktop:build -- --ci --bundles nsis -- --locked
 
 `frontend-checks.yml` 在 main 推送和 PR 上运行，也作为桌面发布的前置检查：锁文件安装、版本和还原基线校验、逻辑测试、源码构建、Chromium 回归。
 
-`tauri-build.yml` 在 `v*` 标签推送或手动指定现有标签时运行。四个平台均先安装 npm 依赖，通过 Tauri 的 `beforeBuildCommand` 构建源码，不再复制整个仓库。发布标签必须等于三个版本文件中的版本；Tauri action 仍创建草稿 release。
+`tauri-build.yml` 在 `v*` 标签推送或手动指定现有标签时运行。四个平台均先安装 npm 依赖，通过 Tauri 的 `beforeBuildCommand` 构建源码，不再复制整个仓库。工作流显式使用 `npx tauri`，避免 Action 默认寻找不存在的 `npm run tauri` 脚本。发布标签必须等于三个版本文件中的版本；Tauri action 仍创建草稿 release。仅修正工作流时，可从 main 手动运行并指定原版本标签，让构建继续使用该标签的源码。
 
 首次接入时需要把源码、package/lock、测试、构建脚本及工作流一并提交。未跟踪文件不会出现在 GitHub runner。不要把 `recovery/`、本地歌单备份、node_modules、dist 或 target 加入提交。推送新的匹配标签后，由 Actions 执行构建并创建草稿 Release。
 
