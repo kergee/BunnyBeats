@@ -1,0 +1,5601 @@
+{
+  "source": {
+    "path": "assets/index-ifD7iYwv.js",
+    "sha256": "8407f9eab50b4b90d1be2bd6f2b82cd8eb837237cb1395b3a1ea6c2fc03c5a9d",
+    "bytes": 886696,
+    "lfSha256": "1443c37e030277e2ef8896bc53a430d9c31230b22dab3c357dd22445119cfc60",
+    "lfBytes": 882027
+  },
+  "originalTopLevelStatements": 436,
+  "atoms": 1111,
+  "transformation": "split top-level declarations; lexical binding renames; generated imports/exports; no expression rewrites",
+  "topLevelNames": {
+    "N": "jsxRuntime",
+    "ae": "React",
+    "Nn": "ReactDefault",
+    "C1": "ReactDOM",
+    "I1": "CheckIcon",
+    "F1": "MenuIcon",
+    "H1": "PaletteIcon",
+    "v_": "PauseIcon",
+    "__": "PlayIcon",
+    "Eu": "ResetIcon",
+    "Tu": "SettingsIcon",
+    "Qr": "XIcon",
+    "kd": "LyricsPanel",
+    "$1": "VinylRecord",
+    "sS": "themeRegistry",
+    "y_": "getTheme",
+    "Uh": "isDarkTheme",
+    "oS": "isFullscreenTheme",
+    "ni": "i18n",
+    "FS": "initReactI18next",
+    "vr": "useTranslation",
+    "qS": "PreviousIcon",
+    "ZS": "NextIcon",
+    "Qx": "formatTime",
+    "KS": "LoadingBarsIcon",
+    "QS": "PlayerControls",
+    "JS": "CoverParticle",
+    "$S": "ParticleCover",
+    "wu": "LanguageSwitcher",
+    "eM": "DEFAULT_PARTICLE_PARAMS",
+    "tM": "ParticleSettings",
+    "Iw": "SimplexNoise",
+    "G0": "RoundedBoxGeometry",
+    "qv": "CUBES_COLORS",
+    "nR": "createBottomAnchoredBoxGeometry",
+    "Kv": "CUBE_VERTEX_SHADER",
+    "Qv": "CUBE_FRAGMENT_SHADER",
+    "iR": "CubesVisualizer",
+    "aR": "DEFAULT_CUBES_PARAMS",
+    "rR": "CubesSettings",
+    "uy": "DEFAULT_VINYL_PARAMS",
+    "sR": "VinylSettings",
+    "Jv": "BACKGROUND_BOTTOM_FRAMES",
+    "$v": "BACKGROUND_MIDDLE_FRAMES",
+    "e_": "BACKGROUND_TOP_FRAMES",
+    "Ea": "CHARACTERS",
+    "bC": "PowerpuffRun",
+    "R0": "DEFAULT_POWERPUFF_PARAMS",
+    "SC": "PowerpuffSettings",
+    "MC": "PlaylistDrawer",
+    "RC": "ThemeDrawer",
+    "CC": "dittoAudio",
+    "DC": "supernaturalAudio",
+    "NC": "attentionAudio",
+    "LC": "hypeboyAudio",
+    "UC": "omgAudio",
+    "OC": "cookieAudio",
+    "PC": "dittoLyrics",
+    "IC": "supernaturalLyrics",
+    "zC": "attentionLyrics",
+    "FC": "hypeboyLyrics",
+    "BC": "omgLyrics",
+    "HC": "cookieLyrics",
+    "GC": "dittoCover",
+    "VC": "supernaturalCover",
+    "Aa": "songs",
+    "u_": "getSongById",
+    "f_": "getDefaultSong",
+    "YC": "parseLyrics",
+    "Qs": "LYRIC_LINE_HEIGHT",
+    "qC": "ROLLING_LYRICS_HEIGHT",
+    "Nh": "UI_HIDE_DELAY_MS",
+    "ZC": "MOBILE_CONTROLS_EXTRA_PX",
+    "KC": "clampOpacity",
+    "Lh": "RollingLyrics",
+    "QC": "App",
+    "hy": "BrowserLanguageDetector",
+    "hD": "zhUI",
+    "pD": "zhThemes",
+    "mD": "zhControls",
+    "gD": "zhTranslation",
+    "xD": "enUI",
+    "vD": "enThemes",
+    "_D": "enControls",
+    "yD": "enTranslation",
+    "py": "rootElement",
+    "bD": "root"
+  },
+  "appLocalNames": {
+    "s": "isPlaying",
+    "e": "setIsPlaying",
+    "n": "theme",
+    "a": "setTheme",
+    "o": "currentTime",
+    "c": "setCurrentTime",
+    "u": "duration",
+    "f": "setDuration",
+    "m": "isSeeking",
+    "h": "setIsSeeking",
+    "x": "isBuffering",
+    "g": "setIsBuffering",
+    "v": "isLoading",
+    "y": "currentSongId",
+    "M": "setCurrentSongId",
+    "E": "volume",
+    "S": "setVolume",
+    "_": "analyser",
+    "L": "setAnalyser",
+    "D": "lyrics",
+    "O": "setLyrics",
+    "F": "isPlaylistOpen",
+    "P": "setPlaylistOpen",
+    "B": "isThemeOpen",
+    "q": "setThemeOpen",
+    "w": "isUIHidden",
+    "A": "setUIHidden",
+    "H": "showFullscreenLyrics",
+    "k": "setShowFullscreenLyrics",
+    "ie": "controlsRef",
+    "I": "lastStableTimeRef",
+    "Y": "lastLyricIndexRef",
+    "Z": "controlsHeight",
+    "pe": "setControlsHeight",
+    "Me": "isMobile",
+    "z": "setIsMobile",
+    "te": "currentSong",
+    "me": "controlsBottomInset",
+    "He": "songInfo",
+    "Ge": "currentLyricIndex",
+    "qe": "currentLyric",
+    "Ke": "previousLyric",
+    "Te": "particleParams",
+    "Je": "setParticleParams",
+    "st": "cubesParams",
+    "G": "setCubesParams",
+    "nt": "powerpuffParams",
+    "rt": "setPowerpuffParams",
+    "it": "vinylParams",
+    "Fe": "setVinylParams",
+    "U": "audioRef",
+    "T": "audioContextRef",
+    "$": "analyserRef",
+    "ve": "pendingSeekRef",
+    "ue": "seekSessionRef",
+    "se": "lastProgressTimeRef",
+    "Ye": "lastPlayStartedAtRef",
+    "ke": "pendingAutoplayRef",
+    "ye": "autoAdvanceRef",
+    "Qe": "sourceRetryRef",
+    "Re": "stalledRetryCountRef",
+    "oe": "hiddenTimeRef",
+    "Le": "requestedSeekRef",
+    "Ve": "seekRequestGenerationRef",
+    "_e": "isSeekingRef",
+    "ze": "songChangedAtRef",
+    "Pe": "ensureAnalyser",
+    "we": "resumeAudioContext",
+    "Ie": "cancelSeek",
+    "Ne": "beginSeek",
+    "Ae": "isStaleSeek",
+    "je": "finishSeek",
+    "Et": "selectSong",
+    "tt": "previousSong",
+    "ft": "nextSong"
+  },
+  "restoredPropBindings": 83,
+  "modules": [
+    {
+      "file": "vendor/react-runtime.js",
+      "sha256": "abe673ef3ef643c8a2dde405b4264182fa4ee234e773921f6da252513f1ff1f5",
+      "statements": 37,
+      "ranges": [
+        {
+          "start": 0,
+          "end": 710
+        },
+        {
+          "start": 710,
+          "end": 811
+        },
+        {
+          "start": 815,
+          "end": 830
+        },
+        {
+          "start": 831,
+          "end": 836
+        },
+        {
+          "start": 1091,
+          "end": 1098
+        },
+        {
+          "start": 1098,
+          "end": 1470
+        },
+        {
+          "start": 1470,
+          "end": 1477
+        },
+        {
+          "start": 1477,
+          "end": 1536
+        },
+        {
+          "start": 1540,
+          "end": 1546
+        },
+        {
+          "start": 1547,
+          "end": 1562
+        },
+        {
+          "start": 1563,
+          "end": 1568
+        },
+        {
+          "start": 1811,
+          "end": 1818
+        },
+        {
+          "start": 1818,
+          "end": 9654
+        },
+        {
+          "start": 9654,
+          "end": 9661
+        },
+        {
+          "start": 9661,
+          "end": 9720
+        },
+        {
+          "start": 9720,
+          "end": 9732
+        },
+        {
+          "start": 9732,
+          "end": 9748
+        },
+        {
+          "start": 9752,
+          "end": 9767
+        },
+        {
+          "start": 9768,
+          "end": 9773
+        },
+        {
+          "start": 9774,
+          "end": 9789
+        },
+        {
+          "start": 9790,
+          "end": 9795
+        },
+        {
+          "start": 10042,
+          "end": 10049
+        },
+        {
+          "start": 10049,
+          "end": 13629
+        },
+        {
+          "start": 13629,
+          "end": 13636
+        },
+        {
+          "start": 13636,
+          "end": 13695
+        },
+        {
+          "start": 13699,
+          "end": 13714
+        },
+        {
+          "start": 13715,
+          "end": 13720
+        },
+        {
+          "start": 13967,
+          "end": 13974
+        },
+        {
+          "start": 13974,
+          "end": 17287
+        },
+        {
+          "start": 17287,
+          "end": 17294
+        },
+        {
+          "start": 17294,
+          "end": 17570
+        },
+        {
+          "start": 17823,
+          "end": 17830
+        },
+        {
+          "start": 17830,
+          "end": 196118
+        },
+        {
+          "start": 196118,
+          "end": 196125
+        },
+        {
+          "start": 196125,
+          "end": 196401
+        },
+        {
+          "start": 196401,
+          "end": 196413
+        },
+        {
+          "start": 196413,
+          "end": 196429
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "Mu",
+        "React",
+        "ReactDOM",
+        "ReactDefault",
+        "jsxRuntime"
+      ]
+    },
+    {
+      "file": "vendor/icons.js",
+      "sha256": "de5e162dbcc81722d42db867b150e952b7d334b237c56328f147143ea208a016",
+      "statements": 24,
+      "ranges": [
+        {
+          "start": 196612,
+          "end": 196671
+        },
+        {
+          "start": 196672,
+          "end": 196755
+        },
+        {
+          "start": 196756,
+          "end": 196821
+        },
+        {
+          "start": 196822,
+          "end": 196905
+        },
+        {
+          "start": 196906,
+          "end": 196989
+        },
+        {
+          "start": 197167,
+          "end": 197343
+        },
+        {
+          "start": 197520,
+          "end": 197904
+        },
+        {
+          "start": 198081,
+          "end": 198272
+        },
+        {
+          "start": 198455,
+          "end": 198503
+        },
+        {
+          "start": 198504,
+          "end": 198521
+        },
+        {
+          "start": 198705,
+          "end": 198819
+        },
+        {
+          "start": 198820,
+          "end": 198836
+        },
+        {
+          "start": 199020,
+          "end": 199452
+        },
+        {
+          "start": 199453,
+          "end": 199472
+        },
+        {
+          "start": 199656,
+          "end": 199791
+        },
+        {
+          "start": 199792,
+          "end": 199809
+        },
+        {
+          "start": 199993,
+          "end": 200108
+        },
+        {
+          "start": 200109,
+          "end": 200125
+        },
+        {
+          "start": 200309,
+          "end": 200428
+        },
+        {
+          "start": 200429,
+          "end": 200451
+        },
+        {
+          "start": 200635,
+          "end": 200806
+        },
+        {
+          "start": 200807,
+          "end": 200829
+        },
+        {
+          "start": 201013,
+          "end": 201095
+        },
+        {
+          "start": 201096,
+          "end": 201109
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "React"
+          ]
+        }
+      ],
+      "exports": [
+        "CheckIcon",
+        "MenuIcon",
+        "PaletteIcon",
+        "PauseIcon",
+        "PlayIcon",
+        "ResetIcon",
+        "SettingsIcon",
+        "XIcon"
+      ]
+    },
+    {
+      "file": "components/LyricsPanel.js",
+      "sha256": "5479216eb07a391d5a71d1d800a289ff548975e4a1d94cad4720299c4f473b9b",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 201110,
+          "end": 204078
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "React",
+            "jsxRuntime"
+          ]
+        }
+      ],
+      "exports": [
+        "LyricsPanel"
+      ]
+    },
+    {
+      "file": "visualizers/VinylRecord.js",
+      "sha256": "73d6b88feebecc79cf939a4ceb2451336629a9fe0714177b9e5f559023617815",
+      "statements": 9,
+      "ranges": [
+        {
+          "start": 204079,
+          "end": 204121
+        },
+        {
+          "start": 204122,
+          "end": 204161
+        },
+        {
+          "start": 204162,
+          "end": 204201
+        },
+        {
+          "start": 204202,
+          "end": 204241
+        },
+        {
+          "start": 204242,
+          "end": 204281
+        },
+        {
+          "start": 204282,
+          "end": 204321
+        },
+        {
+          "start": 204322,
+          "end": 204361
+        },
+        {
+          "start": 204362,
+          "end": 204384
+        },
+        {
+          "start": 204385,
+          "end": 206960
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "React",
+            "jsxRuntime"
+          ]
+        }
+      ],
+      "exports": [
+        "VinylRecord"
+      ]
+    },
+    {
+      "file": "themes/themeRegistry.js",
+      "sha256": "de16c02bad8aa737f5c411b23173f442fd63d53bb2d6b9a01547f399cfeb130e",
+      "statements": 10,
+      "ranges": [
+        {
+          "start": 206961,
+          "end": 207366
+        },
+        {
+          "start": 207367,
+          "end": 207904
+        },
+        {
+          "start": 207905,
+          "end": 208486
+        },
+        {
+          "start": 208487,
+          "end": 209407
+        },
+        {
+          "start": 209408,
+          "end": 209969
+        },
+        {
+          "start": 209970,
+          "end": 210431
+        },
+        {
+          "start": 210432,
+          "end": 210893
+        },
+        {
+          "start": 210894,
+          "end": 210937
+        },
+        {
+          "start": 210937,
+          "end": 211002
+        },
+        {
+          "start": 211002,
+          "end": 211073
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "jsxRuntime"
+          ]
+        }
+      ],
+      "exports": [
+        "isDarkTheme",
+        "isFullscreenTheme"
+      ]
+    },
+    {
+      "file": "vendor/i18n-runtime.js",
+      "sha256": "38c52cf30aa8d9632be814d898c95da392c3214ea08f3ed8b84312b2b7352abd",
+      "statements": 100,
+      "ranges": [
+        {
+          "start": 211079,
+          "end": 211103
+        },
+        {
+          "start": 211104,
+          "end": 211190
+        },
+        {
+          "start": 211191,
+          "end": 211212
+        },
+        {
+          "start": 211213,
+          "end": 211260
+        },
+        {
+          "start": 211261,
+          "end": 211270
+        },
+        {
+          "start": 211271,
+          "end": 211319
+        },
+        {
+          "start": 211320,
+          "end": 211335
+        },
+        {
+          "start": 211336,
+          "end": 211557
+        },
+        {
+          "start": 211558,
+          "end": 211892
+        },
+        {
+          "start": 211893,
+          "end": 211967
+        },
+        {
+          "start": 211968,
+          "end": 212064
+        },
+        {
+          "start": 212065,
+          "end": 212122
+        },
+        {
+          "start": 212123,
+          "end": 212313
+        },
+        {
+          "start": 212314,
+          "end": 212375
+        },
+        {
+          "start": 212376,
+          "end": 212457
+        },
+        {
+          "start": 212457,
+          "end": 212510
+        },
+        {
+          "start": 212510,
+          "end": 212829
+        },
+        {
+          "start": 212835,
+          "end": 212859
+        },
+        {
+          "start": 212860,
+          "end": 212873
+        },
+        {
+          "start": 212874,
+          "end": 213139
+        },
+        {
+          "start": 213140,
+          "end": 213511
+        },
+        {
+          "start": 213512,
+          "end": 213551
+        },
+        {
+          "start": 213552,
+          "end": 213772
+        },
+        {
+          "start": 213773,
+          "end": 214408
+        },
+        {
+          "start": 214408,
+          "end": 214422
+        },
+        {
+          "start": 214422,
+          "end": 214965
+        },
+        {
+          "start": 214965,
+          "end": 217096
+        },
+        {
+          "start": 217096,
+          "end": 217278
+        },
+        {
+          "start": 217278,
+          "end": 217314
+        },
+        {
+          "start": 217314,
+          "end": 217543
+        },
+        {
+          "start": 217543,
+          "end": 217634
+        },
+        {
+          "start": 217640,
+          "end": 217645
+        },
+        {
+          "start": 217646,
+          "end": 217699
+        },
+        {
+          "start": 217700,
+          "end": 227373
+        },
+        {
+          "start": 227373,
+          "end": 229917
+        },
+        {
+          "start": 229923,
+          "end": 229967
+        },
+        {
+          "start": 229968,
+          "end": 230059
+        },
+        {
+          "start": 230060,
+          "end": 231391
+        },
+        {
+          "start": 231397,
+          "end": 231499
+        },
+        {
+          "start": 231500,
+          "end": 231529
+        },
+        {
+          "start": 231530,
+          "end": 235679
+        },
+        {
+          "start": 235685,
+          "end": 236220
+        },
+        {
+          "start": 236221,
+          "end": 236477
+        },
+        {
+          "start": 236478,
+          "end": 236506
+        },
+        {
+          "start": 236507,
+          "end": 237914
+        },
+        {
+          "start": 237914,
+          "end": 237994
+        },
+        {
+          "start": 237994,
+          "end": 241847
+        },
+        {
+          "start": 241853,
+          "end": 242993
+        },
+        {
+          "start": 242994,
+          "end": 243343
+        },
+        {
+          "start": 243344,
+          "end": 243353
+        },
+        {
+          "start": 243354,
+          "end": 243473
+        },
+        {
+          "start": 243474,
+          "end": 254558
+        },
+        {
+          "start": 254558,
+          "end": 254587
+        },
+        {
+          "start": 254587,
+          "end": 254605
+        },
+        {
+          "start": 254605,
+          "end": 254612
+        },
+        {
+          "start": 254612,
+          "end": 254620
+        },
+        {
+          "start": 254620,
+          "end": 254637
+        },
+        {
+          "start": 254637,
+          "end": 254656
+        },
+        {
+          "start": 254656,
+          "end": 254663
+        },
+        {
+          "start": 254663,
+          "end": 254681
+        },
+        {
+          "start": 254681,
+          "end": 254694
+        },
+        {
+          "start": 254694,
+          "end": 254699
+        },
+        {
+          "start": 254699,
+          "end": 254709
+        },
+        {
+          "start": 254709,
+          "end": 254732
+        },
+        {
+          "start": 254732,
+          "end": 254754
+        },
+        {
+          "start": 254754,
+          "end": 254772
+        },
+        {
+          "start": 254772,
+          "end": 254789
+        },
+        {
+          "start": 254795,
+          "end": 255182
+        },
+        {
+          "start": 255183,
+          "end": 255188
+        },
+        {
+          "start": 255189,
+          "end": 255256
+        },
+        {
+          "start": 255257,
+          "end": 255384
+        },
+        {
+          "start": 255385,
+          "end": 255426
+        },
+        {
+          "start": 255427,
+          "end": 255619
+        },
+        {
+          "start": 255620,
+          "end": 255970
+        },
+        {
+          "start": 255971,
+          "end": 255995
+        },
+        {
+          "start": 255996,
+          "end": 256030
+        },
+        {
+          "start": 256031,
+          "end": 256133
+        },
+        {
+          "start": 256134,
+          "end": 256389
+        },
+        {
+          "start": 256390,
+          "end": 256401
+        },
+        {
+          "start": 256402,
+          "end": 256424
+        },
+        {
+          "start": 256425,
+          "end": 256656
+        },
+        {
+          "start": 256662,
+          "end": 256690
+        },
+        {
+          "start": 256691,
+          "end": 256700
+        },
+        {
+          "start": 256701,
+          "end": 256708
+        },
+        {
+          "start": 256714,
+          "end": 256726
+        },
+        {
+          "start": 256727,
+          "end": 256736
+        },
+        {
+          "start": 256737,
+          "end": 256792
+        },
+        {
+          "start": 256793,
+          "end": 256814
+        },
+        {
+          "start": 256815,
+          "end": 257011
+        },
+        {
+          "start": 257015,
+          "end": 257030
+        },
+        {
+          "start": 257031,
+          "end": 257036
+        },
+        {
+          "start": 257302,
+          "end": 257309
+        },
+        {
+          "start": 257309,
+          "end": 258073
+        },
+        {
+          "start": 258073,
+          "end": 258080
+        },
+        {
+          "start": 258080,
+          "end": 258139
+        },
+        {
+          "start": 258139,
+          "end": 258151
+        },
+        {
+          "start": 258157,
+          "end": 258248
+        },
+        {
+          "start": 258249,
+          "end": 258267
+        },
+        {
+          "start": 258268,
+          "end": 258281
+        },
+        {
+          "start": 258282,
+          "end": 260462
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "Mu",
+            "React"
+          ]
+        }
+      ],
+      "exports": [
+        "i18n",
+        "initReactI18next",
+        "useTranslation"
+      ]
+    },
+    {
+      "file": "components/PlayerControls.js",
+      "sha256": "92e7cbef61ac36f3d72e5592b728ec00d813803615c487f94a0a943c9f712557",
+      "statements": 6,
+      "ranges": [
+        {
+          "start": 260463,
+          "end": 260495
+        },
+        {
+          "start": 260496,
+          "end": 260787
+        },
+        {
+          "start": 260788,
+          "end": 261080
+        },
+        {
+          "start": 261081,
+          "end": 261208
+        },
+        {
+          "start": 261209,
+          "end": 261892
+        },
+        {
+          "start": 261893,
+          "end": 267847
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "ReactDefault",
+            "jsxRuntime"
+          ]
+        },
+        {
+          "file": "vendor/icons.js",
+          "names": [
+            "MenuIcon",
+            "PaletteIcon",
+            "PauseIcon",
+            "PlayIcon"
+          ]
+        },
+        {
+          "file": "themes/themeRegistry.js",
+          "names": [
+            "isDarkTheme"
+          ]
+        },
+        {
+          "file": "vendor/i18n-runtime.js",
+          "names": [
+            "useTranslation"
+          ]
+        }
+      ],
+      "exports": [
+        "PlayerControls"
+      ]
+    },
+    {
+      "file": "visualizers/ParticleCover.js",
+      "sha256": "1b890ef11a395e2356096e42ce020c16bf6cf6620491a3a8660a0912b6204e49",
+      "statements": 2,
+      "ranges": [
+        {
+          "start": 267848,
+          "end": 268658
+        },
+        {
+          "start": 268664,
+          "end": 271047
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "React",
+            "jsxRuntime"
+          ]
+        }
+      ],
+      "exports": [
+        "ParticleCover"
+      ]
+    },
+    {
+      "file": "components/LanguageSwitcher.js",
+      "sha256": "05d7528dd9ffd81fa3ce05bf8fd196c3d947ce462afa6505ba0e816c90bb9710",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 271048,
+          "end": 271986
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "jsxRuntime"
+          ]
+        },
+        {
+          "file": "vendor/i18n-runtime.js",
+          "names": [
+            "useTranslation"
+          ]
+        }
+      ],
+      "exports": [
+        "LanguageSwitcher"
+      ]
+    },
+    {
+      "file": "settings/ParticleSettings.js",
+      "sha256": "c503188b0272296050e6f18ce672130ab7faac376f9eaa0d682c4e4b7a3a8337",
+      "statements": 2,
+      "ranges": [
+        {
+          "start": 271987,
+          "end": 272036
+        },
+        {
+          "start": 272037,
+          "end": 275269
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "ReactDefault",
+            "jsxRuntime"
+          ]
+        },
+        {
+          "file": "vendor/icons.js",
+          "names": [
+            "ResetIcon",
+            "SettingsIcon",
+            "XIcon"
+          ]
+        },
+        {
+          "file": "vendor/i18n-runtime.js",
+          "names": [
+            "useTranslation"
+          ]
+        },
+        {
+          "file": "components/LanguageSwitcher.js",
+          "names": [
+            "LanguageSwitcher"
+          ]
+        }
+      ],
+      "exports": [
+        "ParticleSettings"
+      ]
+    },
+    {
+      "file": "vendor/three-runtime.js",
+      "sha256": "efe6716a135687315036fd058143508786c75cd7c86fb45b0fa95e427c45082d",
+      "statements": 712,
+      "ranges": [
+        {
+          "start": 275371,
+          "end": 275379
+        },
+        {
+          "start": 275380,
+          "end": 275384
+        },
+        {
+          "start": 275385,
+          "end": 275389
+        },
+        {
+          "start": 275390,
+          "end": 275394
+        },
+        {
+          "start": 275395,
+          "end": 275399
+        },
+        {
+          "start": 275400,
+          "end": 275404
+        },
+        {
+          "start": 275405,
+          "end": 275409
+        },
+        {
+          "start": 275410,
+          "end": 275414
+        },
+        {
+          "start": 275415,
+          "end": 275419
+        },
+        {
+          "start": 275420,
+          "end": 275424
+        },
+        {
+          "start": 275425,
+          "end": 275429
+        },
+        {
+          "start": 275430,
+          "end": 275434
+        },
+        {
+          "start": 275435,
+          "end": 275439
+        },
+        {
+          "start": 275440,
+          "end": 275444
+        },
+        {
+          "start": 275445,
+          "end": 275449
+        },
+        {
+          "start": 275450,
+          "end": 275454
+        },
+        {
+          "start": 275455,
+          "end": 275461
+        },
+        {
+          "start": 275462,
+          "end": 275468
+        },
+        {
+          "start": 275469,
+          "end": 275475
+        },
+        {
+          "start": 275476,
+          "end": 275482
+        },
+        {
+          "start": 275483,
+          "end": 275489
+        },
+        {
+          "start": 275490,
+          "end": 275496
+        },
+        {
+          "start": 275497,
+          "end": 275503
+        },
+        {
+          "start": 275504,
+          "end": 275510
+        },
+        {
+          "start": 275511,
+          "end": 275517
+        },
+        {
+          "start": 275518,
+          "end": 275524
+        },
+        {
+          "start": 275525,
+          "end": 275531
+        },
+        {
+          "start": 275532,
+          "end": 275538
+        },
+        {
+          "start": 275539,
+          "end": 275545
+        },
+        {
+          "start": 275546,
+          "end": 275552
+        },
+        {
+          "start": 275553,
+          "end": 275559
+        },
+        {
+          "start": 275560,
+          "end": 275566
+        },
+        {
+          "start": 275567,
+          "end": 275573
+        },
+        {
+          "start": 275574,
+          "end": 275580
+        },
+        {
+          "start": 275581,
+          "end": 275587
+        },
+        {
+          "start": 275588,
+          "end": 275594
+        },
+        {
+          "start": 275595,
+          "end": 275599
+        },
+        {
+          "start": 275600,
+          "end": 275604
+        },
+        {
+          "start": 275605,
+          "end": 275609
+        },
+        {
+          "start": 275610,
+          "end": 275614
+        },
+        {
+          "start": 275615,
+          "end": 275619
+        },
+        {
+          "start": 275620,
+          "end": 275624
+        },
+        {
+          "start": 275625,
+          "end": 275629
+        },
+        {
+          "start": 275630,
+          "end": 275634
+        },
+        {
+          "start": 275635,
+          "end": 275639
+        },
+        {
+          "start": 275640,
+          "end": 275644
+        },
+        {
+          "start": 275645,
+          "end": 275649
+        },
+        {
+          "start": 275650,
+          "end": 275654
+        },
+        {
+          "start": 275655,
+          "end": 275659
+        },
+        {
+          "start": 275660,
+          "end": 275664
+        },
+        {
+          "start": 275665,
+          "end": 275669
+        },
+        {
+          "start": 275670,
+          "end": 275674
+        },
+        {
+          "start": 275675,
+          "end": 275679
+        },
+        {
+          "start": 275680,
+          "end": 275684
+        },
+        {
+          "start": 275685,
+          "end": 275689
+        },
+        {
+          "start": 275690,
+          "end": 275696
+        },
+        {
+          "start": 275697,
+          "end": 275703
+        },
+        {
+          "start": 275704,
+          "end": 275710
+        },
+        {
+          "start": 275711,
+          "end": 275717
+        },
+        {
+          "start": 275718,
+          "end": 275724
+        },
+        {
+          "start": 275725,
+          "end": 275731
+        },
+        {
+          "start": 275732,
+          "end": 275738
+        },
+        {
+          "start": 275739,
+          "end": 275746
+        },
+        {
+          "start": 275747,
+          "end": 275754
+        },
+        {
+          "start": 275755,
+          "end": 275762
+        },
+        {
+          "start": 275763,
+          "end": 275770
+        },
+        {
+          "start": 275771,
+          "end": 275778
+        },
+        {
+          "start": 275779,
+          "end": 275786
+        },
+        {
+          "start": 275787,
+          "end": 275794
+        },
+        {
+          "start": 275795,
+          "end": 275802
+        },
+        {
+          "start": 275803,
+          "end": 275810
+        },
+        {
+          "start": 275811,
+          "end": 275818
+        },
+        {
+          "start": 275819,
+          "end": 275826
+        },
+        {
+          "start": 275827,
+          "end": 275834
+        },
+        {
+          "start": 275835,
+          "end": 275842
+        },
+        {
+          "start": 275843,
+          "end": 275850
+        },
+        {
+          "start": 275851,
+          "end": 275858
+        },
+        {
+          "start": 275859,
+          "end": 275866
+        },
+        {
+          "start": 275867,
+          "end": 275874
+        },
+        {
+          "start": 275875,
+          "end": 275882
+        },
+        {
+          "start": 275883,
+          "end": 275890
+        },
+        {
+          "start": 275891,
+          "end": 275899
+        },
+        {
+          "start": 275900,
+          "end": 275908
+        },
+        {
+          "start": 275909,
+          "end": 275916
+        },
+        {
+          "start": 275917,
+          "end": 275924
+        },
+        {
+          "start": 275925,
+          "end": 275932
+        },
+        {
+          "start": 275933,
+          "end": 275940
+        },
+        {
+          "start": 275941,
+          "end": 275948
+        },
+        {
+          "start": 275949,
+          "end": 275956
+        },
+        {
+          "start": 275957,
+          "end": 275964
+        },
+        {
+          "start": 275965,
+          "end": 275972
+        },
+        {
+          "start": 275973,
+          "end": 275980
+        },
+        {
+          "start": 275981,
+          "end": 275988
+        },
+        {
+          "start": 275989,
+          "end": 275997
+        },
+        {
+          "start": 275998,
+          "end": 276006
+        },
+        {
+          "start": 276007,
+          "end": 276015
+        },
+        {
+          "start": 276016,
+          "end": 276024
+        },
+        {
+          "start": 276025,
+          "end": 276033
+        },
+        {
+          "start": 276034,
+          "end": 276042
+        },
+        {
+          "start": 276043,
+          "end": 276051
+        },
+        {
+          "start": 276052,
+          "end": 276060
+        },
+        {
+          "start": 276061,
+          "end": 276069
+        },
+        {
+          "start": 276070,
+          "end": 276078
+        },
+        {
+          "start": 276079,
+          "end": 276087
+        },
+        {
+          "start": 276088,
+          "end": 276096
+        },
+        {
+          "start": 276097,
+          "end": 276105
+        },
+        {
+          "start": 276106,
+          "end": 276114
+        },
+        {
+          "start": 276115,
+          "end": 276123
+        },
+        {
+          "start": 276124,
+          "end": 276132
+        },
+        {
+          "start": 276133,
+          "end": 276141
+        },
+        {
+          "start": 276142,
+          "end": 276150
+        },
+        {
+          "start": 276151,
+          "end": 276159
+        },
+        {
+          "start": 276160,
+          "end": 276168
+        },
+        {
+          "start": 276169,
+          "end": 276177
+        },
+        {
+          "start": 276178,
+          "end": 276186
+        },
+        {
+          "start": 276187,
+          "end": 276195
+        },
+        {
+          "start": 276196,
+          "end": 276204
+        },
+        {
+          "start": 276205,
+          "end": 276213
+        },
+        {
+          "start": 276214,
+          "end": 276222
+        },
+        {
+          "start": 276223,
+          "end": 276231
+        },
+        {
+          "start": 276232,
+          "end": 276240
+        },
+        {
+          "start": 276241,
+          "end": 276249
+        },
+        {
+          "start": 276250,
+          "end": 276258
+        },
+        {
+          "start": 276259,
+          "end": 276267
+        },
+        {
+          "start": 276268,
+          "end": 276276
+        },
+        {
+          "start": 276277,
+          "end": 276284
+        },
+        {
+          "start": 276285,
+          "end": 276292
+        },
+        {
+          "start": 276293,
+          "end": 276297
+        },
+        {
+          "start": 276298,
+          "end": 276302
+        },
+        {
+          "start": 276303,
+          "end": 276308
+        },
+        {
+          "start": 276309,
+          "end": 276318
+        },
+        {
+          "start": 276319,
+          "end": 276335
+        },
+        {
+          "start": 276336,
+          "end": 276347
+        },
+        {
+          "start": 276348,
+          "end": 276357
+        },
+        {
+          "start": 276358,
+          "end": 276365
+        },
+        {
+          "start": 276366,
+          "end": 276372
+        },
+        {
+          "start": 276373,
+          "end": 276379
+        },
+        {
+          "start": 276380,
+          "end": 276386
+        },
+        {
+          "start": 276387,
+          "end": 276393
+        },
+        {
+          "start": 276394,
+          "end": 276400
+        },
+        {
+          "start": 276401,
+          "end": 276407
+        },
+        {
+          "start": 276408,
+          "end": 276414
+        },
+        {
+          "start": 276415,
+          "end": 276421
+        },
+        {
+          "start": 276422,
+          "end": 276428
+        },
+        {
+          "start": 276429,
+          "end": 276437
+        },
+        {
+          "start": 276438,
+          "end": 276449
+        },
+        {
+          "start": 276450,
+          "end": 276456
+        },
+        {
+          "start": 276457,
+          "end": 276464
+        },
+        {
+          "start": 276465,
+          "end": 276543
+        },
+        {
+          "start": 276543,
+          "end": 276624
+        },
+        {
+          "start": 276624,
+          "end": 276692
+        },
+        {
+          "start": 276692,
+          "end": 276704
+        },
+        {
+          "start": 276704,
+          "end": 276769
+        },
+        {
+          "start": 276769,
+          "end": 276835
+        },
+        {
+          "start": 276835,
+          "end": 276902
+        },
+        {
+          "start": 276902,
+          "end": 276969
+        },
+        {
+          "start": 276969,
+          "end": 277195
+        },
+        {
+          "start": 277195,
+          "end": 277795
+        },
+        {
+          "start": 277795,
+          "end": 279086
+        },
+        {
+          "start": 279086,
+          "end": 279101
+        },
+        {
+          "start": 279107,
+          "end": 279121
+        },
+        {
+          "start": 279122,
+          "end": 279136
+        },
+        {
+          "start": 279137,
+          "end": 279520
+        },
+        {
+          "start": 279520,
+          "end": 279572
+        },
+        {
+          "start": 279572,
+          "end": 279605
+        },
+        {
+          "start": 279605,
+          "end": 279655
+        },
+        {
+          "start": 279655,
+          "end": 279701
+        },
+        {
+          "start": 279701,
+          "end": 279738
+        },
+        {
+          "start": 279738,
+          "end": 279791
+        },
+        {
+          "start": 279791,
+          "end": 279841
+        },
+        {
+          "start": 279841,
+          "end": 279909
+        },
+        {
+          "start": 279909,
+          "end": 279987
+        },
+        {
+          "start": 279987,
+          "end": 280047
+        },
+        {
+          "start": 280047,
+          "end": 280093
+        },
+        {
+          "start": 280093,
+          "end": 280136
+        },
+        {
+          "start": 280136,
+          "end": 280281
+        },
+        {
+          "start": 280281,
+          "end": 280308
+        },
+        {
+          "start": 280308,
+          "end": 280335
+        },
+        {
+          "start": 280335,
+          "end": 280375
+        },
+        {
+          "start": 280375,
+          "end": 280441
+        },
+        {
+          "start": 280441,
+          "end": 280508
+        },
+        {
+          "start": 280508,
+          "end": 280990
+        },
+        {
+          "start": 280990,
+          "end": 281340
+        },
+        {
+          "start": 281340,
+          "end": 281723
+        },
+        {
+          "start": 281723,
+          "end": 282082
+        },
+        {
+          "start": 282082,
+          "end": 285480
+        },
+        {
+          "start": 285480,
+          "end": 291107
+        },
+        {
+          "start": 291107,
+          "end": 297508
+        },
+        {
+          "start": 297514,
+          "end": 297523
+        },
+        {
+          "start": 297524,
+          "end": 297533
+        },
+        {
+          "start": 297534,
+          "end": 300596
+        },
+        {
+          "start": 300602,
+          "end": 300611
+        },
+        {
+          "start": 300612,
+          "end": 300708
+        },
+        {
+          "start": 300709,
+          "end": 300813
+        },
+        {
+          "start": 300814,
+          "end": 302840
+        },
+        {
+          "start": 302840,
+          "end": 302854
+        },
+        {
+          "start": 302854,
+          "end": 302939
+        },
+        {
+          "start": 302939,
+          "end": 303010
+        },
+        {
+          "start": 303010,
+          "end": 303017
+        },
+        {
+          "start": 303017,
+          "end": 304154
+        },
+        {
+          "start": 304154,
+          "end": 304163
+        },
+        {
+          "start": 304163,
+          "end": 304960
+        },
+        {
+          "start": 304960,
+          "end": 305311
+        },
+        {
+          "start": 305311,
+          "end": 305320
+        },
+        {
+          "start": 305320,
+          "end": 305336
+        },
+        {
+          "start": 305336,
+          "end": 309447
+        },
+        {
+          "start": 309447,
+          "end": 309469
+        },
+        {
+          "start": 309469,
+          "end": 309491
+        },
+        {
+          "start": 309491,
+          "end": 309515
+        },
+        {
+          "start": 309515,
+          "end": 314874
+        },
+        {
+          "start": 314874,
+          "end": 317988
+        },
+        {
+          "start": 317988,
+          "end": 318076
+        },
+        {
+          "start": 318076,
+          "end": 318439
+        },
+        {
+          "start": 318439,
+          "end": 318684
+        },
+        {
+          "start": 318684,
+          "end": 323475
+        },
+        {
+          "start": 323481,
+          "end": 323541
+        },
+        {
+          "start": 323542,
+          "end": 323551
+        },
+        {
+          "start": 323552,
+          "end": 323561
+        },
+        {
+          "start": 323562,
+          "end": 323571
+        },
+        {
+          "start": 323572,
+          "end": 323581
+        },
+        {
+          "start": 323582,
+          "end": 323591
+        },
+        {
+          "start": 323592,
+          "end": 323601
+        },
+        {
+          "start": 323602,
+          "end": 323611
+        },
+        {
+          "start": 323612,
+          "end": 323621
+        },
+        {
+          "start": 323622,
+          "end": 323631
+        },
+        {
+          "start": 323632,
+          "end": 323641
+        },
+        {
+          "start": 323642,
+          "end": 323651
+        },
+        {
+          "start": 323652,
+          "end": 323661
+        },
+        {
+          "start": 323662,
+          "end": 323906
+        },
+        {
+          "start": 323912,
+          "end": 323921
+        },
+        {
+          "start": 323922,
+          "end": 323931
+        },
+        {
+          "start": 323932,
+          "end": 323941
+        },
+        {
+          "start": 323942,
+          "end": 326107
+        },
+        {
+          "start": 326113,
+          "end": 326122
+        },
+        {
+          "start": 326123,
+          "end": 326132
+        },
+        {
+          "start": 326133,
+          "end": 326142
+        },
+        {
+          "start": 326143,
+          "end": 326152
+        },
+        {
+          "start": 326153,
+          "end": 326162
+        },
+        {
+          "start": 326163,
+          "end": 326172
+        },
+        {
+          "start": 326173,
+          "end": 326182
+        },
+        {
+          "start": 326183,
+          "end": 329790
+        },
+        {
+          "start": 329790,
+          "end": 338650
+        },
+        {
+          "start": 338656,
+          "end": 338665
+        },
+        {
+          "start": 338666,
+          "end": 338675
+        },
+        {
+          "start": 338676,
+          "end": 338692
+        },
+        {
+          "start": 338693,
+          "end": 338709
+        },
+        {
+          "start": 338710,
+          "end": 338719
+        },
+        {
+          "start": 338720,
+          "end": 338729
+        },
+        {
+          "start": 338730,
+          "end": 338739
+        },
+        {
+          "start": 338740,
+          "end": 338749
+        },
+        {
+          "start": 338750,
+          "end": 338759
+        },
+        {
+          "start": 338760,
+          "end": 341331
+        },
+        {
+          "start": 341331,
+          "end": 341354
+        },
+        {
+          "start": 341354,
+          "end": 341639
+        },
+        {
+          "start": 341639,
+          "end": 341648
+        },
+        {
+          "start": 341654,
+          "end": 341663
+        },
+        {
+          "start": 341664,
+          "end": 341673
+        },
+        {
+          "start": 341674,
+          "end": 341683
+        },
+        {
+          "start": 341684,
+          "end": 341693
+        },
+        {
+          "start": 341694,
+          "end": 341703
+        },
+        {
+          "start": 341704,
+          "end": 341713
+        },
+        {
+          "start": 341714,
+          "end": 341723
+        },
+        {
+          "start": 341724,
+          "end": 341740
+        },
+        {
+          "start": 341741,
+          "end": 341757
+        },
+        {
+          "start": 341758,
+          "end": 341774
+        },
+        {
+          "start": 341775,
+          "end": 341792
+        },
+        {
+          "start": 341793,
+          "end": 341812
+        },
+        {
+          "start": 341813,
+          "end": 341846
+        },
+        {
+          "start": 341847,
+          "end": 341882
+        },
+        {
+          "start": 341883,
+          "end": 352428
+        },
+        {
+          "start": 352428,
+          "end": 352456
+        },
+        {
+          "start": 352456,
+          "end": 352489
+        },
+        {
+          "start": 352489,
+          "end": 352528
+        },
+        {
+          "start": 352534,
+          "end": 352543
+        },
+        {
+          "start": 352544,
+          "end": 352553
+        },
+        {
+          "start": 352554,
+          "end": 352563
+        },
+        {
+          "start": 352564,
+          "end": 352573
+        },
+        {
+          "start": 352574,
+          "end": 352583
+        },
+        {
+          "start": 352584,
+          "end": 352593
+        },
+        {
+          "start": 352594,
+          "end": 352603
+        },
+        {
+          "start": 352604,
+          "end": 352613
+        },
+        {
+          "start": 352614,
+          "end": 352623
+        },
+        {
+          "start": 352624,
+          "end": 352633
+        },
+        {
+          "start": 352634,
+          "end": 352643
+        },
+        {
+          "start": 352644,
+          "end": 352653
+        },
+        {
+          "start": 352654,
+          "end": 352663
+        },
+        {
+          "start": 352664,
+          "end": 355755
+        },
+        {
+          "start": 355761,
+          "end": 358460
+        },
+        {
+          "start": 358461,
+          "end": 358477
+        },
+        {
+          "start": 358478,
+          "end": 358494
+        },
+        {
+          "start": 358495,
+          "end": 358597
+        },
+        {
+          "start": 358597,
+          "end": 363484
+        },
+        {
+          "start": 363484,
+          "end": 363500
+        },
+        {
+          "start": 363500,
+          "end": 363512
+        },
+        {
+          "start": 363512,
+          "end": 363521
+        },
+        {
+          "start": 363521,
+          "end": 374955
+        },
+        {
+          "start": 374955,
+          "end": 376046
+        },
+        {
+          "start": 376052,
+          "end": 376061
+        },
+        {
+          "start": 376062,
+          "end": 376071
+        },
+        {
+          "start": 376072,
+          "end": 376081
+        },
+        {
+          "start": 376081,
+          "end": 379585
+        },
+        {
+          "start": 379585,
+          "end": 379655
+        },
+        {
+          "start": 379655,
+          "end": 379725
+        },
+        {
+          "start": 379725,
+          "end": 379796
+        },
+        {
+          "start": 379796,
+          "end": 379805
+        },
+        {
+          "start": 379811,
+          "end": 379820
+        },
+        {
+          "start": 379821,
+          "end": 379830
+        },
+        {
+          "start": 379831,
+          "end": 379840
+        },
+        {
+          "start": 379841,
+          "end": 379850
+        },
+        {
+          "start": 379851,
+          "end": 379860
+        },
+        {
+          "start": 379861,
+          "end": 379870
+        },
+        {
+          "start": 379871,
+          "end": 390029
+        },
+        {
+          "start": 390035,
+          "end": 390044
+        },
+        {
+          "start": 390045,
+          "end": 390054
+        },
+        {
+          "start": 390055,
+          "end": 390064
+        },
+        {
+          "start": 390065,
+          "end": 390074
+        },
+        {
+          "start": 390075,
+          "end": 390084
+        },
+        {
+          "start": 390085,
+          "end": 390094
+        },
+        {
+          "start": 390095,
+          "end": 390104
+        },
+        {
+          "start": 390105,
+          "end": 390114
+        },
+        {
+          "start": 390115,
+          "end": 390124
+        },
+        {
+          "start": 390125,
+          "end": 390134
+        },
+        {
+          "start": 390135,
+          "end": 390144
+        },
+        {
+          "start": 390145,
+          "end": 393202
+        },
+        {
+          "start": 393202,
+          "end": 393497
+        },
+        {
+          "start": 393497,
+          "end": 394038
+        },
+        {
+          "start": 394038,
+          "end": 395356
+        },
+        {
+          "start": 395356,
+          "end": 395771
+        },
+        {
+          "start": 395771,
+          "end": 395878
+        },
+        {
+          "start": 395878,
+          "end": 395961
+        },
+        {
+          "start": 395961,
+          "end": 396105
+        },
+        {
+          "start": 396105,
+          "end": 396134
+        },
+        {
+          "start": 396138,
+          "end": 396235
+        },
+        {
+          "start": 396236,
+          "end": 396302
+        },
+        {
+          "start": 396303,
+          "end": 398161
+        },
+        {
+          "start": 398161,
+          "end": 398994
+        },
+        {
+          "start": 399000,
+          "end": 399009
+        },
+        {
+          "start": 399010,
+          "end": 399019
+        },
+        {
+          "start": 399020,
+          "end": 399029
+        },
+        {
+          "start": 399030,
+          "end": 401471
+        },
+        {
+          "start": 401477,
+          "end": 401483
+        },
+        {
+          "start": 401484,
+          "end": 401488
+        },
+        {
+          "start": 401489,
+          "end": 403436
+        },
+        {
+          "start": 403436,
+          "end": 403617
+        },
+        {
+          "start": 403617,
+          "end": 405259
+        },
+        {
+          "start": 405259,
+          "end": 405336
+        },
+        {
+          "start": 405336,
+          "end": 405359
+        },
+        {
+          "start": 405359,
+          "end": 408640
+        },
+        {
+          "start": 408640,
+          "end": 408896
+        },
+        {
+          "start": 408896,
+          "end": 410358
+        },
+        {
+          "start": 410358,
+          "end": 411828
+        },
+        {
+          "start": 411828,
+          "end": 411844
+        },
+        {
+          "start": 411844,
+          "end": 415592
+        },
+        {
+          "start": 415592,
+          "end": 416017
+        },
+        {
+          "start": 416017,
+          "end": 416024
+        },
+        {
+          "start": 416030,
+          "end": 416039
+        },
+        {
+          "start": 416040,
+          "end": 416049
+        },
+        {
+          "start": 416050,
+          "end": 416059
+        },
+        {
+          "start": 416060,
+          "end": 416069
+        },
+        {
+          "start": 416070,
+          "end": 416079
+        },
+        {
+          "start": 416080,
+          "end": 416089
+        },
+        {
+          "start": 416090,
+          "end": 416099
+        },
+        {
+          "start": 416100,
+          "end": 416109
+        },
+        {
+          "start": 416110,
+          "end": 416119
+        },
+        {
+          "start": 416120,
+          "end": 416129
+        },
+        {
+          "start": 416130,
+          "end": 416139
+        },
+        {
+          "start": 416140,
+          "end": 416149
+        },
+        {
+          "start": 416150,
+          "end": 417619
+        },
+        {
+          "start": 417619,
+          "end": 417801
+        },
+        {
+          "start": 417801,
+          "end": 418024
+        },
+        {
+          "start": 418030,
+          "end": 418039
+        },
+        {
+          "start": 418040,
+          "end": 418049
+        },
+        {
+          "start": 418050,
+          "end": 418059
+        },
+        {
+          "start": 418060,
+          "end": 419855
+        },
+        {
+          "start": 419861,
+          "end": 419870
+        },
+        {
+          "start": 419871,
+          "end": 419887
+        },
+        {
+          "start": 419888,
+          "end": 419897
+        },
+        {
+          "start": 419898,
+          "end": 421941
+        },
+        {
+          "start": 421941,
+          "end": 422062
+        },
+        {
+          "start": 422062,
+          "end": 422629
+        },
+        {
+          "start": 422629,
+          "end": 422794
+        },
+        {
+          "start": 422794,
+          "end": 423585
+        },
+        {
+          "start": 423585,
+          "end": 424180
+        },
+        {
+          "start": 424180,
+          "end": 424611
+        },
+        {
+          "start": 424611,
+          "end": 424830
+        },
+        {
+          "start": 424830,
+          "end": 425845
+        },
+        {
+          "start": 425845,
+          "end": 425861
+        },
+        {
+          "start": 425861,
+          "end": 426385
+        },
+        {
+          "start": 426385,
+          "end": 426422
+        },
+        {
+          "start": 426422,
+          "end": 426443
+        },
+        {
+          "start": 426443,
+          "end": 427475
+        },
+        {
+          "start": 427475,
+          "end": 427708
+        },
+        {
+          "start": 427708,
+          "end": 429464
+        },
+        {
+          "start": 429464,
+          "end": 429574
+        },
+        {
+          "start": 429574,
+          "end": 431399
+        },
+        {
+          "start": 431399,
+          "end": 431736
+        },
+        {
+          "start": 431736,
+          "end": 431852
+        },
+        {
+          "start": 431852,
+          "end": 431972
+        },
+        {
+          "start": 432067,
+          "end": 432353
+        },
+        {
+          "start": 432353,
+          "end": 434395
+        },
+        {
+          "start": 434399,
+          "end": 434502
+        },
+        {
+          "start": 434503,
+          "end": 435747
+        },
+        {
+          "start": 435748,
+          "end": 435838
+        },
+        {
+          "start": 435839,
+          "end": 435901
+        },
+        {
+          "start": 435902,
+          "end": 436162
+        },
+        {
+          "start": 436163,
+          "end": 436223
+        },
+        {
+          "start": 436224,
+          "end": 436813
+        },
+        {
+          "start": 436814,
+          "end": 436902
+        },
+        {
+          "start": 436903,
+          "end": 438122
+        },
+        {
+          "start": 438123,
+          "end": 438231
+        },
+        {
+          "start": 438232,
+          "end": 438335
+        },
+        {
+          "start": 438336,
+          "end": 438448
+        },
+        {
+          "start": 438449,
+          "end": 439137
+        },
+        {
+          "start": 439138,
+          "end": 441919
+        },
+        {
+          "start": 441920,
+          "end": 442817
+        },
+        {
+          "start": 442818,
+          "end": 444571
+        },
+        {
+          "start": 444572,
+          "end": 444696
+        },
+        {
+          "start": 444697,
+          "end": 444767
+        },
+        {
+          "start": 444768,
+          "end": 444844
+        },
+        {
+          "start": 444845,
+          "end": 444972
+        },
+        {
+          "start": 444973,
+          "end": 445090
+        },
+        {
+          "start": 445091,
+          "end": 445276
+        },
+        {
+          "start": 445277,
+          "end": 445725
+        },
+        {
+          "start": 445726,
+          "end": 448126
+        },
+        {
+          "start": 448127,
+          "end": 451544
+        },
+        {
+          "start": 451545,
+          "end": 452563
+        },
+        {
+          "start": 452564,
+          "end": 452709
+        },
+        {
+          "start": 452710,
+          "end": 452889
+        },
+        {
+          "start": 452890,
+          "end": 453138
+        },
+        {
+          "start": 453139,
+          "end": 453207
+        },
+        {
+          "start": 453208,
+          "end": 453264
+        },
+        {
+          "start": 453265,
+          "end": 453768
+        },
+        {
+          "start": 453769,
+          "end": 454937
+        },
+        {
+          "start": 454938,
+          "end": 455163
+        },
+        {
+          "start": 455164,
+          "end": 455487
+        },
+        {
+          "start": 455488,
+          "end": 455785
+        },
+        {
+          "start": 455786,
+          "end": 456407
+        },
+        {
+          "start": 456408,
+          "end": 456465
+        },
+        {
+          "start": 456466,
+          "end": 456520
+        },
+        {
+          "start": 456521,
+          "end": 456798
+        },
+        {
+          "start": 456799,
+          "end": 456993
+        },
+        {
+          "start": 456994,
+          "end": 457446
+        },
+        {
+          "start": 457447,
+          "end": 457544
+        },
+        {
+          "start": 457545,
+          "end": 457665
+        },
+        {
+          "start": 457666,
+          "end": 458707
+        },
+        {
+          "start": 458708,
+          "end": 463181
+        },
+        {
+          "start": 463182,
+          "end": 464617
+        },
+        {
+          "start": 464618,
+          "end": 464688
+        },
+        {
+          "start": 464689,
+          "end": 465666
+        },
+        {
+          "start": 465667,
+          "end": 465867
+        },
+        {
+          "start": 465868,
+          "end": 467182
+        },
+        {
+          "start": 467183,
+          "end": 471092
+        },
+        {
+          "start": 471093,
+          "end": 487060
+        },
+        {
+          "start": 487061,
+          "end": 492699
+        },
+        {
+          "start": 492700,
+          "end": 493572
+        },
+        {
+          "start": 493573,
+          "end": 493972
+        },
+        {
+          "start": 493973,
+          "end": 494129
+        },
+        {
+          "start": 494130,
+          "end": 494277
+        },
+        {
+          "start": 494278,
+          "end": 494386
+        },
+        {
+          "start": 494387,
+          "end": 494540
+        },
+        {
+          "start": 494541,
+          "end": 494767
+        },
+        {
+          "start": 494768,
+          "end": 494820
+        },
+        {
+          "start": 494821,
+          "end": 495176
+        },
+        {
+          "start": 495177,
+          "end": 495443
+        },
+        {
+          "start": 495444,
+          "end": 495623
+        },
+        {
+          "start": 495624,
+          "end": 495694
+        },
+        {
+          "start": 495695,
+          "end": 496034
+        },
+        {
+          "start": 496035,
+          "end": 496480
+        },
+        {
+          "start": 496481,
+          "end": 496741
+        },
+        {
+          "start": 496742,
+          "end": 497399
+        },
+        {
+          "start": 497400,
+          "end": 497658
+        },
+        {
+          "start": 497659,
+          "end": 498931
+        },
+        {
+          "start": 498932,
+          "end": 499496
+        },
+        {
+          "start": 499497,
+          "end": 499637
+        },
+        {
+          "start": 499638,
+          "end": 499778
+        },
+        {
+          "start": 499779,
+          "end": 500001
+        },
+        {
+          "start": 500002,
+          "end": 500844
+        },
+        {
+          "start": 500845,
+          "end": 500923
+        },
+        {
+          "start": 500924,
+          "end": 501161
+        },
+        {
+          "start": 501162,
+          "end": 501435
+        },
+        {
+          "start": 501436,
+          "end": 501600
+        },
+        {
+          "start": 501601,
+          "end": 501785
+        },
+        {
+          "start": 501786,
+          "end": 504519
+        },
+        {
+          "start": 504520,
+          "end": 504597
+        },
+        {
+          "start": 504598,
+          "end": 504884
+        },
+        {
+          "start": 504885,
+          "end": 504966
+        },
+        {
+          "start": 504967,
+          "end": 505290
+        },
+        {
+          "start": 505291,
+          "end": 505470
+        },
+        {
+          "start": 505471,
+          "end": 505541
+        },
+        {
+          "start": 505542,
+          "end": 514845
+        },
+        {
+          "start": 514846,
+          "end": 516183
+        },
+        {
+          "start": 516184,
+          "end": 517642
+        },
+        {
+          "start": 517643,
+          "end": 519122
+        },
+        {
+          "start": 519123,
+          "end": 519347
+        },
+        {
+          "start": 519348,
+          "end": 519919
+        },
+        {
+          "start": 519920,
+          "end": 520298
+        },
+        {
+          "start": 520299,
+          "end": 520759
+        },
+        {
+          "start": 520760,
+          "end": 520956
+        },
+        {
+          "start": 520957,
+          "end": 521025
+        },
+        {
+          "start": 521026,
+          "end": 521120
+        },
+        {
+          "start": 521121,
+          "end": 524697
+        },
+        {
+          "start": 524698,
+          "end": 525798
+        },
+        {
+          "start": 525799,
+          "end": 531791
+        },
+        {
+          "start": 531792,
+          "end": 533423
+        },
+        {
+          "start": 533424,
+          "end": 535940
+        },
+        {
+          "start": 535941,
+          "end": 538696
+        },
+        {
+          "start": 538697,
+          "end": 539110
+        },
+        {
+          "start": 539117,
+          "end": 539275
+        },
+        {
+          "start": 539276,
+          "end": 539787
+        },
+        {
+          "start": 539788,
+          "end": 540011
+        },
+        {
+          "start": 540012,
+          "end": 540856
+        },
+        {
+          "start": 540857,
+          "end": 541080
+        },
+        {
+          "start": 541081,
+          "end": 541425
+        },
+        {
+          "start": 541426,
+          "end": 542250
+        },
+        {
+          "start": 542251,
+          "end": 543508
+        },
+        {
+          "start": 543509,
+          "end": 544311
+        },
+        {
+          "start": 544312,
+          "end": 545110
+        },
+        {
+          "start": 545111,
+          "end": 545301
+        },
+        {
+          "start": 545302,
+          "end": 545613
+        },
+        {
+          "start": 545614,
+          "end": 546266
+        },
+        {
+          "start": 546267,
+          "end": 547116
+        },
+        {
+          "start": 547117,
+          "end": 548086
+        },
+        {
+          "start": 548087,
+          "end": 549759
+        },
+        {
+          "start": 549760,
+          "end": 550938
+        },
+        {
+          "start": 550939,
+          "end": 552928
+        },
+        {
+          "start": 552929,
+          "end": 553955
+        },
+        {
+          "start": 553956,
+          "end": 555513
+        },
+        {
+          "start": 555514,
+          "end": 556608
+        },
+        {
+          "start": 556609,
+          "end": 557348
+        },
+        {
+          "start": 557349,
+          "end": 558525
+        },
+        {
+          "start": 558526,
+          "end": 560625
+        },
+        {
+          "start": 560626,
+          "end": 561882
+        },
+        {
+          "start": 561883,
+          "end": 566056
+        },
+        {
+          "start": 566057,
+          "end": 567174
+        },
+        {
+          "start": 567175,
+          "end": 569019
+        },
+        {
+          "start": 569020,
+          "end": 569920
+        },
+        {
+          "start": 569921,
+          "end": 570744
+        },
+        {
+          "start": 570745,
+          "end": 571436
+        },
+        {
+          "start": 571437,
+          "end": 571927
+        },
+        {
+          "start": 571928,
+          "end": 572921
+        },
+        {
+          "start": 572922,
+          "end": 573720
+        },
+        {
+          "start": 573721,
+          "end": 576897
+        },
+        {
+          "start": 576898,
+          "end": 579776
+        },
+        {
+          "start": 579777,
+          "end": 582853
+        },
+        {
+          "start": 582854,
+          "end": 584421
+        },
+        {
+          "start": 584427,
+          "end": 584443
+        },
+        {
+          "start": 584444,
+          "end": 584453
+        },
+        {
+          "start": 584454,
+          "end": 584463
+        },
+        {
+          "start": 584464,
+          "end": 587604
+        },
+        {
+          "start": 587604,
+          "end": 592139
+        },
+        {
+          "start": 592139,
+          "end": 592800
+        },
+        {
+          "start": 592800,
+          "end": 594654
+        },
+        {
+          "start": 594654,
+          "end": 595830
+        },
+        {
+          "start": 595830,
+          "end": 596430
+        },
+        {
+          "start": 596436,
+          "end": 596440
+        },
+        {
+          "start": 596441,
+          "end": 596474
+        },
+        {
+          "start": 596475,
+          "end": 596480
+        },
+        {
+          "start": 596481,
+          "end": 596487
+        },
+        {
+          "start": 596488,
+          "end": 596497
+        },
+        {
+          "start": 596498,
+          "end": 596507
+        },
+        {
+          "start": 596512,
+          "end": 596519
+        },
+        {
+          "start": 596520,
+          "end": 596524
+        },
+        {
+          "start": 596525,
+          "end": 596529
+        },
+        {
+          "start": 596530,
+          "end": 596535
+        },
+        {
+          "start": 596536,
+          "end": 596552
+        },
+        {
+          "start": 596552,
+          "end": 602699
+        },
+        {
+          "start": 602699,
+          "end": 603404
+        },
+        {
+          "start": 603404,
+          "end": 603522
+        },
+        {
+          "start": 603522,
+          "end": 603592
+        },
+        {
+          "start": 603592,
+          "end": 607656
+        },
+        {
+          "start": 607656,
+          "end": 609494
+        },
+        {
+          "start": 609494,
+          "end": 610017
+        },
+        {
+          "start": 610017,
+          "end": 610499
+        },
+        {
+          "start": 610499,
+          "end": 611589
+        },
+        {
+          "start": 611589,
+          "end": 612519
+        },
+        {
+          "start": 612519,
+          "end": 612989
+        },
+        {
+          "start": 612989,
+          "end": 614134
+        },
+        {
+          "start": 614134,
+          "end": 614884
+        },
+        {
+          "start": 614884,
+          "end": 615392
+        },
+        {
+          "start": 615392,
+          "end": 617137
+        },
+        {
+          "start": 617137,
+          "end": 617786
+        },
+        {
+          "start": 617792,
+          "end": 617801
+        },
+        {
+          "start": 617802,
+          "end": 617816
+        },
+        {
+          "start": 617817,
+          "end": 617826
+        },
+        {
+          "start": 617827,
+          "end": 617836
+        },
+        {
+          "start": 617837,
+          "end": 617846
+        },
+        {
+          "start": 617847,
+          "end": 617852
+        },
+        {
+          "start": 617853,
+          "end": 617858
+        },
+        {
+          "start": 617859,
+          "end": 617882
+        },
+        {
+          "start": 617883,
+          "end": 617905
+        },
+        {
+          "start": 617906,
+          "end": 617928
+        },
+        {
+          "start": 617929,
+          "end": 618134
+        },
+        {
+          "start": 618134,
+          "end": 618247
+        },
+        {
+          "start": 618247,
+          "end": 618305
+        },
+        {
+          "start": 618305,
+          "end": 618436
+        },
+        {
+          "start": 618436,
+          "end": 618516
+        },
+        {
+          "start": 618516,
+          "end": 618703
+        },
+        {
+          "start": 618703,
+          "end": 619038
+        },
+        {
+          "start": 619038,
+          "end": 619275
+        },
+        {
+          "start": 619275,
+          "end": 619478
+        },
+        {
+          "start": 619478,
+          "end": 619681
+        },
+        {
+          "start": 619681,
+          "end": 619884
+        },
+        {
+          "start": 619884,
+          "end": 619964
+        },
+        {
+          "start": 619964,
+          "end": 620151
+        },
+        {
+          "start": 620151,
+          "end": 620363
+        },
+        {
+          "start": 620363,
+          "end": 620600
+        },
+        {
+          "start": 620600,
+          "end": 620681
+        },
+        {
+          "start": 620681,
+          "end": 620870
+        },
+        {
+          "start": 620870,
+          "end": 621084
+        },
+        {
+          "start": 621084,
+          "end": 621323
+        },
+        {
+          "start": 621323,
+          "end": 621526
+        },
+        {
+          "start": 621526,
+          "end": 621658
+        },
+        {
+          "start": 621658,
+          "end": 621792
+        },
+        {
+          "start": 621792,
+          "end": 621929
+        },
+        {
+          "start": 621929,
+          "end": 622527
+        },
+        {
+          "start": 622527,
+          "end": 622570
+        },
+        {
+          "start": 622570,
+          "end": 622639
+        },
+        {
+          "start": 622639,
+          "end": 622708
+        },
+        {
+          "start": 622708,
+          "end": 622777
+        },
+        {
+          "start": 622777,
+          "end": 622855
+        },
+        {
+          "start": 622855,
+          "end": 622933
+        },
+        {
+          "start": 622933,
+          "end": 623012
+        },
+        {
+          "start": 623012,
+          "end": 623055
+        },
+        {
+          "start": 623055,
+          "end": 623098
+        },
+        {
+          "start": 623098,
+          "end": 623141
+        },
+        {
+          "start": 623141,
+          "end": 623184
+        },
+        {
+          "start": 623184,
+          "end": 623228
+        },
+        {
+          "start": 623228,
+          "end": 623272
+        },
+        {
+          "start": 623272,
+          "end": 623316
+        },
+        {
+          "start": 623316,
+          "end": 623360
+        },
+        {
+          "start": 623360,
+          "end": 623516
+        },
+        {
+          "start": 623516,
+          "end": 623672
+        },
+        {
+          "start": 623672,
+          "end": 623830
+        },
+        {
+          "start": 623830,
+          "end": 623991
+        },
+        {
+          "start": 623991,
+          "end": 624589
+        },
+        {
+          "start": 624589,
+          "end": 624696
+        },
+        {
+          "start": 624696,
+          "end": 624820
+        },
+        {
+          "start": 624820,
+          "end": 624984
+        },
+        {
+          "start": 624984,
+          "end": 625015
+        },
+        {
+          "start": 625015,
+          "end": 625060
+        },
+        {
+          "start": 625060,
+          "end": 625353
+        },
+        {
+          "start": 625353,
+          "end": 625926
+        },
+        {
+          "start": 625926,
+          "end": 626019
+        },
+        {
+          "start": 626019,
+          "end": 626034
+        },
+        {
+          "start": 626034,
+          "end": 626043
+        },
+        {
+          "start": 626043,
+          "end": 626224
+        },
+        {
+          "start": 626224,
+          "end": 626240
+        },
+        {
+          "start": 626240,
+          "end": 626541
+        },
+        {
+          "start": 626541,
+          "end": 626810
+        },
+        {
+          "start": 626810,
+          "end": 626951
+        },
+        {
+          "start": 626951,
+          "end": 627300
+        },
+        {
+          "start": 627300,
+          "end": 627316
+        },
+        {
+          "start": 627316,
+          "end": 627567
+        },
+        {
+          "start": 627567,
+          "end": 627761
+        },
+        {
+          "start": 627761,
+          "end": 627873
+        },
+        {
+          "start": 627873,
+          "end": 628181
+        },
+        {
+          "start": 628181,
+          "end": 628210
+        },
+        {
+          "start": 628210,
+          "end": 628877
+        },
+        {
+          "start": 628877,
+          "end": 629031
+        },
+        {
+          "start": 629031,
+          "end": 629075
+        },
+        {
+          "start": 629075,
+          "end": 629114
+        },
+        {
+          "start": 629114,
+          "end": 629131
+        },
+        {
+          "start": 629131,
+          "end": 629367
+        },
+        {
+          "start": 629367,
+          "end": 629519
+        },
+        {
+          "start": 629519,
+          "end": 629558
+        },
+        {
+          "start": 629558,
+          "end": 629712
+        },
+        {
+          "start": 629712,
+          "end": 630596
+        },
+        {
+          "start": 630596,
+          "end": 630789
+        },
+        {
+          "start": 630789,
+          "end": 630952
+        },
+        {
+          "start": 630952,
+          "end": 631081
+        },
+        {
+          "start": 631081,
+          "end": 631283
+        },
+        {
+          "start": 631283,
+          "end": 631456
+        },
+        {
+          "start": 631456,
+          "end": 643081
+        },
+        {
+          "start": 643081,
+          "end": 643090
+        },
+        {
+          "start": 643090,
+          "end": 643987
+        },
+        {
+          "start": 643987,
+          "end": 644054
+        },
+        {
+          "start": 644054,
+          "end": 654257
+        },
+        {
+          "start": 654257,
+          "end": 654520
+        },
+        {
+          "start": 654520,
+          "end": 654742
+        },
+        {
+          "start": 654742,
+          "end": 654906
+        },
+        {
+          "start": 654906,
+          "end": 655844
+        },
+        {
+          "start": 655844,
+          "end": 656050
+        },
+        {
+          "start": 656050,
+          "end": 656606
+        },
+        {
+          "start": 656606,
+          "end": 657114
+        },
+        {
+          "start": 657114,
+          "end": 657123
+        },
+        {
+          "start": 657123,
+          "end": 657208
+        },
+        {
+          "start": 657208,
+          "end": 662320
+        },
+        {
+          "start": 662320,
+          "end": 662681
+        },
+        {
+          "start": 662681,
+          "end": 662896
+        },
+        {
+          "start": 662902,
+          "end": 662962
+        },
+        {
+          "start": 662963,
+          "end": 664050
+        },
+        {
+          "start": 664051,
+          "end": 668657
+        },
+        {
+          "start": 668657,
+          "end": 668732
+        },
+        {
+          "start": 668732,
+          "end": 679082
+        },
+        {
+          "start": 679082,
+          "end": 707811
+        },
+        {
+          "start": 707811,
+          "end": 711945
+        },
+        {
+          "start": 711951,
+          "end": 712017
+        },
+        {
+          "start": 712018,
+          "end": 712421
+        },
+        {
+          "start": 712422,
+          "end": 713045
+        },
+        {
+          "start": 713045,
+          "end": 721636
+        },
+        {
+          "start": 721642,
+          "end": 721651
+        },
+        {
+          "start": 721652,
+          "end": 721661
+        },
+        {
+          "start": 721662,
+          "end": 728278
+        },
+        {
+          "start": 728278,
+          "end": 731455
+        },
+        {
+          "start": 731455,
+          "end": 743062
+        },
+        {
+          "start": 743062,
+          "end": 743074
+        },
+        {
+          "start": 743074,
+          "end": 743233
+        },
+        {
+          "start": 743233,
+          "end": 775619
+        },
+        {
+          "start": 775619,
+          "end": 780089
+        },
+        {
+          "start": 780089,
+          "end": 780105
+        },
+        {
+          "start": 780105,
+          "end": 780307
+        },
+        {
+          "start": 780307,
+          "end": 781767
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "H3",
+        "Ia",
+        "Li",
+        "Na",
+        "P3",
+        "Pr",
+        "Pw",
+        "RoundedBoxGeometry",
+        "SimplexNoise",
+        "U3",
+        "W3",
+        "Xt",
+        "bu",
+        "ji",
+        "q_",
+        "yi"
+      ]
+    },
+    {
+      "file": "visualizers/CubesVisualizer.js",
+      "sha256": "8d0481ef0b11344c868db7ab3ab713d213f5cf860be1e1687ea343074c9066e0",
+      "statements": 36,
+      "ranges": [
+        {
+          "start": 781773,
+          "end": 781817
+        },
+        {
+          "start": 781818,
+          "end": 781860
+        },
+        {
+          "start": 781861,
+          "end": 781905
+        },
+        {
+          "start": 781906,
+          "end": 781949
+        },
+        {
+          "start": 781950,
+          "end": 781991
+        },
+        {
+          "start": 781992,
+          "end": 782035
+        },
+        {
+          "start": 782036,
+          "end": 782320
+        },
+        {
+          "start": 782321,
+          "end": 782325
+        },
+        {
+          "start": 782326,
+          "end": 782330
+        },
+        {
+          "start": 782331,
+          "end": 782337
+        },
+        {
+          "start": 782338,
+          "end": 782352
+        },
+        {
+          "start": 782353,
+          "end": 782366
+        },
+        {
+          "start": 782367,
+          "end": 782373
+        },
+        {
+          "start": 782374,
+          "end": 782486
+        },
+        {
+          "start": 782487,
+          "end": 782575
+        },
+        {
+          "start": 782576,
+          "end": 782580
+        },
+        {
+          "start": 782581,
+          "end": 782585
+        },
+        {
+          "start": 782586,
+          "end": 782597
+        },
+        {
+          "start": 782598,
+          "end": 782602
+        },
+        {
+          "start": 782603,
+          "end": 782609
+        },
+        {
+          "start": 782610,
+          "end": 782617
+        },
+        {
+          "start": 782618,
+          "end": 782625
+        },
+        {
+          "start": 782626,
+          "end": 782632
+        },
+        {
+          "start": 782633,
+          "end": 782639
+        },
+        {
+          "start": 782640,
+          "end": 782648
+        },
+        {
+          "start": 782649,
+          "end": 782657
+        },
+        {
+          "start": 782658,
+          "end": 782669
+        },
+        {
+          "start": 782670,
+          "end": 782688
+        },
+        {
+          "start": 782689,
+          "end": 782694
+        },
+        {
+          "start": 782695,
+          "end": 782702
+        },
+        {
+          "start": 782703,
+          "end": 782708
+        },
+        {
+          "start": 782709,
+          "end": 782713
+        },
+        {
+          "start": 782714,
+          "end": 782943
+        },
+        {
+          "start": 782944,
+          "end": 783386
+        },
+        {
+          "start": 783387,
+          "end": 784937
+        },
+        {
+          "start": 784938,
+          "end": 792158
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "React",
+            "jsxRuntime"
+          ]
+        },
+        {
+          "file": "vendor/three-runtime.js",
+          "names": [
+            "H3",
+            "Ia",
+            "Li",
+            "Na",
+            "P3",
+            "Pr",
+            "Pw",
+            "RoundedBoxGeometry",
+            "SimplexNoise",
+            "U3",
+            "W3",
+            "Xt",
+            "bu",
+            "ji",
+            "q_",
+            "yi"
+          ]
+        }
+      ],
+      "exports": [
+        "CubesVisualizer",
+        "ay",
+        "cy",
+        "ly",
+        "oy",
+        "ry",
+        "sy"
+      ]
+    },
+    {
+      "file": "settings/CubesSettings.js",
+      "sha256": "efd862501c08326dfa94963ec1770687d1d0e06d756305a9d64065e127334b98",
+      "statements": 2,
+      "ranges": [
+        {
+          "start": 792159,
+          "end": 792225
+        },
+        {
+          "start": 792226,
+          "end": 795581
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "ReactDefault",
+            "jsxRuntime"
+          ]
+        },
+        {
+          "file": "vendor/icons.js",
+          "names": [
+            "ResetIcon",
+            "SettingsIcon",
+            "XIcon"
+          ]
+        },
+        {
+          "file": "vendor/i18n-runtime.js",
+          "names": [
+            "useTranslation"
+          ]
+        },
+        {
+          "file": "components/LanguageSwitcher.js",
+          "names": [
+            "LanguageSwitcher"
+          ]
+        }
+      ],
+      "exports": [
+        "CubesSettings"
+      ]
+    },
+    {
+      "file": "settings/VinylSettings.js",
+      "sha256": "bc470238c0f6a248713b89b1aded48944dd3c02f68c670d79eeefe5b811194c7",
+      "statements": 2,
+      "ranges": [
+        {
+          "start": 795582,
+          "end": 795613
+        },
+        {
+          "start": 795614,
+          "end": 797924
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "ReactDefault",
+            "jsxRuntime"
+          ]
+        },
+        {
+          "file": "vendor/icons.js",
+          "names": [
+            "ResetIcon",
+            "SettingsIcon",
+            "XIcon"
+          ]
+        },
+        {
+          "file": "vendor/i18n-runtime.js",
+          "names": [
+            "useTranslation"
+          ]
+        },
+        {
+          "file": "components/LanguageSwitcher.js",
+          "names": [
+            "LanguageSwitcher"
+          ]
+        }
+      ],
+      "exports": [
+        "DEFAULT_VINYL_PARAMS",
+        "VinylSettings"
+      ]
+    },
+    {
+      "file": "visualizers/PowerpuffRun.js",
+      "sha256": "a4e77b399c8dcd16bee54a8f021510b502a259da59f65bbdf34b6b0ed1d5a3e8",
+      "statements": 90,
+      "ranges": [
+        {
+          "start": 797925,
+          "end": 797957
+        },
+        {
+          "start": 797958,
+          "end": 797990
+        },
+        {
+          "start": 797991,
+          "end": 798023
+        },
+        {
+          "start": 798024,
+          "end": 798056
+        },
+        {
+          "start": 798057,
+          "end": 798089
+        },
+        {
+          "start": 798090,
+          "end": 798122
+        },
+        {
+          "start": 798123,
+          "end": 798155
+        },
+        {
+          "start": 798156,
+          "end": 798188
+        },
+        {
+          "start": 798189,
+          "end": 798221
+        },
+        {
+          "start": 798222,
+          "end": 798254
+        },
+        {
+          "start": 798255,
+          "end": 798288
+        },
+        {
+          "start": 798289,
+          "end": 798322
+        },
+        {
+          "start": 798323,
+          "end": 798356
+        },
+        {
+          "start": 798357,
+          "end": 798390
+        },
+        {
+          "start": 798391,
+          "end": 798424
+        },
+        {
+          "start": 798425,
+          "end": 798459
+        },
+        {
+          "start": 798460,
+          "end": 798494
+        },
+        {
+          "start": 798495,
+          "end": 798529
+        },
+        {
+          "start": 798530,
+          "end": 798564
+        },
+        {
+          "start": 798565,
+          "end": 798599
+        },
+        {
+          "start": 798600,
+          "end": 798634
+        },
+        {
+          "start": 798635,
+          "end": 798669
+        },
+        {
+          "start": 798670,
+          "end": 798704
+        },
+        {
+          "start": 798705,
+          "end": 798739
+        },
+        {
+          "start": 798740,
+          "end": 798774
+        },
+        {
+          "start": 798775,
+          "end": 798812
+        },
+        {
+          "start": 798813,
+          "end": 798850
+        },
+        {
+          "start": 798851,
+          "end": 798888
+        },
+        {
+          "start": 798889,
+          "end": 798926
+        },
+        {
+          "start": 798927,
+          "end": 798964
+        },
+        {
+          "start": 798965,
+          "end": 799002
+        },
+        {
+          "start": 799003,
+          "end": 799040
+        },
+        {
+          "start": 799041,
+          "end": 799075
+        },
+        {
+          "start": 799076,
+          "end": 799110
+        },
+        {
+          "start": 799111,
+          "end": 799145
+        },
+        {
+          "start": 799146,
+          "end": 799180
+        },
+        {
+          "start": 799181,
+          "end": 799215
+        },
+        {
+          "start": 799216,
+          "end": 799250
+        },
+        {
+          "start": 799251,
+          "end": 799283
+        },
+        {
+          "start": 799284,
+          "end": 799316
+        },
+        {
+          "start": 799317,
+          "end": 799349
+        },
+        {
+          "start": 799350,
+          "end": 799382
+        },
+        {
+          "start": 799383,
+          "end": 799415
+        },
+        {
+          "start": 799416,
+          "end": 799448
+        },
+        {
+          "start": 799449,
+          "end": 799483
+        },
+        {
+          "start": 799484,
+          "end": 799518
+        },
+        {
+          "start": 799519,
+          "end": 799553
+        },
+        {
+          "start": 799554,
+          "end": 799588
+        },
+        {
+          "start": 799589,
+          "end": 799623
+        },
+        {
+          "start": 799624,
+          "end": 799658
+        },
+        {
+          "start": 799659,
+          "end": 799689
+        },
+        {
+          "start": 799690,
+          "end": 799703
+        },
+        {
+          "start": 799704,
+          "end": 799717
+        },
+        {
+          "start": 799718,
+          "end": 799725
+        },
+        {
+          "start": 799726,
+          "end": 799731
+        },
+        {
+          "start": 799732,
+          "end": 799738
+        },
+        {
+          "start": 799739,
+          "end": 799743
+        },
+        {
+          "start": 799744,
+          "end": 799769
+        },
+        {
+          "start": 799770,
+          "end": 799775
+        },
+        {
+          "start": 799776,
+          "end": 799783
+        },
+        {
+          "start": 799784,
+          "end": 799806
+        },
+        {
+          "start": 799807,
+          "end": 799812
+        },
+        {
+          "start": 799813,
+          "end": 799820
+        },
+        {
+          "start": 799821,
+          "end": 799843
+        },
+        {
+          "start": 799844,
+          "end": 799849
+        },
+        {
+          "start": 799850,
+          "end": 799856
+        },
+        {
+          "start": 799857,
+          "end": 799862
+        },
+        {
+          "start": 799863,
+          "end": 799869
+        },
+        {
+          "start": 799870,
+          "end": 799877
+        },
+        {
+          "start": 799878,
+          "end": 800550
+        },
+        {
+          "start": 800551,
+          "end": 800563
+        },
+        {
+          "start": 800564,
+          "end": 800571
+        },
+        {
+          "start": 800572,
+          "end": 800579
+        },
+        {
+          "start": 800580,
+          "end": 800584
+        },
+        {
+          "start": 800585,
+          "end": 800591
+        },
+        {
+          "start": 800592,
+          "end": 800599
+        },
+        {
+          "start": 800600,
+          "end": 800605
+        },
+        {
+          "start": 800606,
+          "end": 800611
+        },
+        {
+          "start": 800612,
+          "end": 800618
+        },
+        {
+          "start": 800619,
+          "end": 800624
+        },
+        {
+          "start": 800625,
+          "end": 800630
+        },
+        {
+          "start": 800631,
+          "end": 800743
+        },
+        {
+          "start": 800744,
+          "end": 800756
+        },
+        {
+          "start": 800757,
+          "end": 800774
+        },
+        {
+          "start": 800775,
+          "end": 800794
+        },
+        {
+          "start": 800795,
+          "end": 800800
+        },
+        {
+          "start": 800801,
+          "end": 800805
+        },
+        {
+          "start": 800806,
+          "end": 800825
+        },
+        {
+          "start": 800826,
+          "end": 800832
+        },
+        {
+          "start": 800833,
+          "end": 814014
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "React",
+            "jsxRuntime"
+          ]
+        }
+      ],
+      "exports": [
+        "PowerpuffRun"
+      ]
+    },
+    {
+      "file": "settings/PowerpuffSettings.js",
+      "sha256": "3ecd43606a85de07878fc3afb5e306f23d316b44b8eb4430740d286ef926f8a5",
+      "statements": 2,
+      "ranges": [
+        {
+          "start": 814015,
+          "end": 814077
+        },
+        {
+          "start": 814078,
+          "end": 816973
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "React",
+            "jsxRuntime"
+          ]
+        },
+        {
+          "file": "vendor/icons.js",
+          "names": [
+            "ResetIcon",
+            "SettingsIcon",
+            "XIcon"
+          ]
+        },
+        {
+          "file": "vendor/i18n-runtime.js",
+          "names": [
+            "useTranslation"
+          ]
+        },
+        {
+          "file": "components/LanguageSwitcher.js",
+          "names": [
+            "LanguageSwitcher"
+          ]
+        }
+      ],
+      "exports": [
+        "DEFAULT_POWERPUFF_PARAMS",
+        "PowerpuffSettings"
+      ]
+    },
+    {
+      "file": "components/PlaylistDrawer.js",
+      "sha256": "f88ee9b49ae7a8c84801696b0e1367a73e943767b0c4f31d5e030f43338674e2",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 816974,
+          "end": 820021
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "jsxRuntime"
+          ]
+        },
+        {
+          "file": "vendor/icons.js",
+          "names": [
+            "PauseIcon",
+            "PlayIcon",
+            "XIcon"
+          ]
+        },
+        {
+          "file": "vendor/i18n-runtime.js",
+          "names": [
+            "useTranslation"
+          ]
+        }
+      ],
+      "exports": [
+        "PlaylistDrawer"
+      ]
+    },
+    {
+      "file": "components/ThemeDrawer.js",
+      "sha256": "3dc559e472e9759715edcb4bfd6f4901737b37c92933e012f73e9224fec68db2",
+      "statements": 5,
+      "ranges": [
+        {
+          "start": 820022,
+          "end": 820054
+        },
+        {
+          "start": 820055,
+          "end": 820087
+        },
+        {
+          "start": 820088,
+          "end": 820124
+        },
+        {
+          "start": 820125,
+          "end": 820157
+        },
+        {
+          "start": 820158,
+          "end": 822819
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "jsxRuntime"
+          ]
+        },
+        {
+          "file": "vendor/icons.js",
+          "names": [
+            "CheckIcon",
+            "XIcon"
+          ]
+        },
+        {
+          "file": "vendor/i18n-runtime.js",
+          "names": [
+            "useTranslation"
+          ]
+        }
+      ],
+      "exports": [
+        "ThemeDrawer"
+      ]
+    },
+    {
+      "file": "data/audio.js",
+      "sha256": "0bb2036eb9bdbe9b51781b5cf39853d25890f19002c47fa80c63b516e66d4102",
+      "statements": 6,
+      "ranges": [
+        {
+          "start": 822820,
+          "end": 822869
+        },
+        {
+          "start": 822870,
+          "end": 822926
+        },
+        {
+          "start": 822927,
+          "end": 822980
+        },
+        {
+          "start": 822981,
+          "end": 823035
+        },
+        {
+          "start": 823036,
+          "end": 823084
+        },
+        {
+          "start": 823085,
+          "end": 823136
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "attentionAudio",
+        "cookieAudio",
+        "dittoAudio",
+        "hypeboyAudio",
+        "omgAudio",
+        "supernaturalAudio"
+      ]
+    },
+    {
+      "file": "data/lyrics/ditto.js",
+      "sha256": "19e7ae99a868231378631ed0633d71da9febff1039533ce9a6a8a0ae573bba44",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 823137,
+          "end": 827209
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "dittoLyrics"
+      ]
+    },
+    {
+      "file": "data/lyrics/supernatural.js",
+      "sha256": "5de31d1614707cfc74cedd68595e3932bcc5d644d39f741a359069710c46e9f5",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 827210,
+          "end": 829831
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "supernaturalLyrics"
+      ]
+    },
+    {
+      "file": "data/lyrics/attention.js",
+      "sha256": "07f701cd5da6d77fd68ec016385e0bc46246dec49672b7b94ed7266b7cf94a03",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 829832,
+          "end": 833748
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "attentionLyrics"
+      ]
+    },
+    {
+      "file": "data/lyrics/hypeboy.js",
+      "sha256": "e8b79a73211aa74aeea9fbe35acd1e32b4835c9458befb58a6c5e09a184b9ced",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 833749,
+          "end": 837520
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "hypeboyLyrics"
+      ]
+    },
+    {
+      "file": "data/lyrics/omg.js",
+      "sha256": "7ec088f1e228852f402d059a4b47db5779914e712c58c2d027e16c8aaf9a85d2",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 837521,
+          "end": 843213
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "omgLyrics"
+      ]
+    },
+    {
+      "file": "data/lyrics/cookie.js",
+      "sha256": "b8a4a6ff2be438dec992da989bad1f308d7ad29a238b6fd1d6ac33d125224e57",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 843214,
+          "end": 848191
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "cookieLyrics"
+      ]
+    },
+    {
+      "file": "data/songs.js",
+      "sha256": "1bd63f1c4e725d9c19085be1bf328a1caac125e9231330d03f9c8d00a47b7ce9",
+      "statements": 9,
+      "ranges": [
+        {
+          "start": 848192,
+          "end": 848242
+        },
+        {
+          "start": 848243,
+          "end": 848300
+        },
+        {
+          "start": 848301,
+          "end": 848350
+        },
+        {
+          "start": 848351,
+          "end": 848400
+        },
+        {
+          "start": 848401,
+          "end": 848450
+        },
+        {
+          "start": 848451,
+          "end": 848500
+        },
+        {
+          "start": 848501,
+          "end": 849527
+        },
+        {
+          "start": 849528,
+          "end": 849554
+        },
+        {
+          "start": 849555,
+          "end": 849567
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "data/audio.js",
+          "names": [
+            "attentionAudio",
+            "cookieAudio",
+            "dittoAudio",
+            "hypeboyAudio",
+            "omgAudio",
+            "supernaturalAudio"
+          ]
+        },
+        {
+          "file": "data/lyrics/ditto.js",
+          "names": [
+            "dittoLyrics"
+          ]
+        },
+        {
+          "file": "data/lyrics/supernatural.js",
+          "names": [
+            "supernaturalLyrics"
+          ]
+        },
+        {
+          "file": "data/lyrics/attention.js",
+          "names": [
+            "attentionLyrics"
+          ]
+        },
+        {
+          "file": "data/lyrics/hypeboy.js",
+          "names": [
+            "hypeboyLyrics"
+          ]
+        },
+        {
+          "file": "data/lyrics/omg.js",
+          "names": [
+            "omgLyrics"
+          ]
+        },
+        {
+          "file": "data/lyrics/cookie.js",
+          "names": [
+            "cookieLyrics"
+          ]
+        }
+      ],
+      "exports": [
+        "getDefaultSong",
+        "getSongById",
+        "songs"
+      ]
+    },
+    {
+      "file": "lyrics/parseLyrics.js",
+      "sha256": "d308ddcf507e414a1b238535a0ea4c6f787751d3d1dd81399a0480d9365dc021",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 849568,
+          "end": 850329
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "parseLyrics"
+      ]
+    },
+    {
+      "file": "lyrics/layout.js",
+      "sha256": "e63bde647a42c2f8044629ddcf75456777ee4d7d1795f7d7320b028f3eb12b48",
+      "statements": 5,
+      "ranges": [
+        {
+          "start": 850330,
+          "end": 850335
+        },
+        {
+          "start": 850336,
+          "end": 850343
+        },
+        {
+          "start": 850344,
+          "end": 850351
+        },
+        {
+          "start": 850352,
+          "end": 850357
+        },
+        {
+          "start": 850358,
+          "end": 850406
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "LYRIC_LINE_HEIGHT",
+        "MOBILE_CONTROLS_EXTRA_PX",
+        "ROLLING_LYRICS_HEIGHT",
+        "UI_HIDE_DELAY_MS",
+        "clampOpacity"
+      ]
+    },
+    {
+      "file": "components/RollingLyrics.js",
+      "sha256": "c3eed0479a62e3d7bc2a8343ddd956e74786924495500ad1a8dc39750f127ebd",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 850406,
+          "end": 852574
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "React",
+            "jsxRuntime"
+          ]
+        },
+        {
+          "file": "lyrics/layout.js",
+          "names": [
+            "LYRIC_LINE_HEIGHT",
+            "ROLLING_LYRICS_HEIGHT",
+            "clampOpacity"
+          ]
+        }
+      ],
+      "exports": [
+        "RollingLyrics"
+      ]
+    },
+    {
+      "file": "preload.js",
+      "sha256": "19ed07ea3ae183f8d1b287703419e2631bb67baf70a4b45704751fa7c222d234",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 852574,
+          "end": 852634
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "visualizers/CubesVisualizer.js",
+          "names": [
+            "ay",
+            "cy",
+            "ly",
+            "oy",
+            "ry",
+            "sy"
+          ]
+        }
+      ],
+      "exports": []
+    },
+    {
+      "file": "App.js",
+      "sha256": "adfa8f61f9711afcd21252bca123a6c3ecf507e410cbb39e7a84193527f4babb",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 852640,
+          "end": 874625
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "React",
+            "ReactDefault",
+            "jsxRuntime"
+          ]
+        },
+        {
+          "file": "vendor/icons.js",
+          "names": [
+            "XIcon"
+          ]
+        },
+        {
+          "file": "components/LyricsPanel.js",
+          "names": [
+            "LyricsPanel"
+          ]
+        },
+        {
+          "file": "visualizers/VinylRecord.js",
+          "names": [
+            "VinylRecord"
+          ]
+        },
+        {
+          "file": "themes/themeRegistry.js",
+          "names": [
+            "isDarkTheme",
+            "isFullscreenTheme"
+          ]
+        },
+        {
+          "file": "components/PlayerControls.js",
+          "names": [
+            "PlayerControls"
+          ]
+        },
+        {
+          "file": "visualizers/ParticleCover.js",
+          "names": [
+            "ParticleCover"
+          ]
+        },
+        {
+          "file": "settings/ParticleSettings.js",
+          "names": [
+            "ParticleSettings"
+          ]
+        },
+        {
+          "file": "visualizers/CubesVisualizer.js",
+          "names": [
+            "CubesVisualizer"
+          ]
+        },
+        {
+          "file": "settings/CubesSettings.js",
+          "names": [
+            "CubesSettings"
+          ]
+        },
+        {
+          "file": "settings/VinylSettings.js",
+          "names": [
+            "DEFAULT_VINYL_PARAMS",
+            "VinylSettings"
+          ]
+        },
+        {
+          "file": "visualizers/PowerpuffRun.js",
+          "names": [
+            "PowerpuffRun"
+          ]
+        },
+        {
+          "file": "settings/PowerpuffSettings.js",
+          "names": [
+            "DEFAULT_POWERPUFF_PARAMS",
+            "PowerpuffSettings"
+          ]
+        },
+        {
+          "file": "components/PlaylistDrawer.js",
+          "names": [
+            "PlaylistDrawer"
+          ]
+        },
+        {
+          "file": "components/ThemeDrawer.js",
+          "names": [
+            "ThemeDrawer"
+          ]
+        },
+        {
+          "file": "data/songs.js",
+          "names": [
+            "getDefaultSong",
+            "getSongById",
+            "songs"
+          ]
+        },
+        {
+          "file": "lyrics/parseLyrics.js",
+          "names": [
+            "parseLyrics"
+          ]
+        },
+        {
+          "file": "lyrics/layout.js",
+          "names": [
+            "MOBILE_CONTROLS_EXTRA_PX",
+            "UI_HIDE_DELAY_MS"
+          ]
+        },
+        {
+          "file": "components/RollingLyrics.js",
+          "names": [
+            "RollingLyrics"
+          ]
+        }
+      ],
+      "exports": [
+        "App"
+      ]
+    },
+    {
+      "file": "vendor/language-detector.js",
+      "sha256": "dd45bdd1bd9f1de98d72928229df2540d51fc514f0c0e2ad6de3bb1c77a3d90c",
+      "statements": 26,
+      "ranges": [
+        {
+          "start": 874626,
+          "end": 874650
+        },
+        {
+          "start": 874651,
+          "end": 874759
+        },
+        {
+          "start": 874759,
+          "end": 875072
+        },
+        {
+          "start": 875078,
+          "end": 875120
+        },
+        {
+          "start": 875121,
+          "end": 876138
+        },
+        {
+          "start": 876139,
+          "end": 876613
+        },
+        {
+          "start": 876618,
+          "end": 876859
+        },
+        {
+          "start": 876860,
+          "end": 877287
+        },
+        {
+          "start": 877288,
+          "end": 877759
+        },
+        {
+          "start": 877760,
+          "end": 877772
+        },
+        {
+          "start": 877772,
+          "end": 878004
+        },
+        {
+          "start": 878004,
+          "end": 878223
+        },
+        {
+          "start": 878223,
+          "end": 878235
+        },
+        {
+          "start": 878235,
+          "end": 878473
+        },
+        {
+          "start": 878477,
+          "end": 878701
+        },
+        {
+          "start": 878702,
+          "end": 878923
+        },
+        {
+          "start": 878924,
+          "end": 879110
+        },
+        {
+          "start": 879111,
+          "end": 879351
+        },
+        {
+          "start": 879352,
+          "end": 879626
+        },
+        {
+          "start": 879627,
+          "end": 879637
+        },
+        {
+          "start": 879637,
+          "end": 879670
+        },
+        {
+          "start": 879670,
+          "end": 879758
+        },
+        {
+          "start": 879758,
+          "end": 879777
+        },
+        {
+          "start": 879777,
+          "end": 879996
+        },
+        {
+          "start": 879996,
+          "end": 881644
+        },
+        {
+          "start": 881644,
+          "end": 881671
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "BrowserLanguageDetector"
+      ]
+    },
+    {
+      "file": "i18n/translations.js",
+      "sha256": "b7dd400e937e2fd349d529126256657537161c1246994f5d28670e946fc2b775",
+      "statements": 8,
+      "ranges": [
+        {
+          "start": 881677,
+          "end": 881766
+        },
+        {
+          "start": 881767,
+          "end": 881834
+        },
+        {
+          "start": 881835,
+          "end": 882285
+        },
+        {
+          "start": 882286,
+          "end": 882318
+        },
+        {
+          "start": 882319,
+          "end": 882433
+        },
+        {
+          "start": 882434,
+          "end": 882545
+        },
+        {
+          "start": 882546,
+          "end": 883153
+        },
+        {
+          "start": 883154,
+          "end": 883186
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [],
+      "exports": [
+        "enTranslation",
+        "zhTranslation"
+      ]
+    },
+    {
+      "file": "i18n/init.js",
+      "sha256": "725487704f72305b4bbe9d8305a6e41d4ad65e50a6416602a2449a859214c038",
+      "statements": 1,
+      "ranges": [
+        {
+          "start": 883187,
+          "end": 883314
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/i18n-runtime.js",
+          "names": [
+            "i18n",
+            "initReactI18next"
+          ]
+        },
+        {
+          "file": "vendor/language-detector.js",
+          "names": [
+            "BrowserLanguageDetector"
+          ]
+        },
+        {
+          "file": "i18n/translations.js",
+          "names": [
+            "enTranslation",
+            "zhTranslation"
+          ]
+        }
+      ],
+      "exports": []
+    },
+    {
+      "file": "mount.js",
+      "sha256": "00465fad62e8c788afc2c85eb800e744f836c1029cba53b91664484dd174a5d1",
+      "statements": 4,
+      "ranges": [
+        {
+          "start": 883314,
+          "end": 883355
+        },
+        {
+          "start": 883355,
+          "end": 883421
+        },
+        {
+          "start": 883421,
+          "end": 883448
+        },
+        {
+          "start": 883448,
+          "end": 883504
+        }
+      ],
+      "rangeSemantics": "half-open UTF-16 character offsets",
+      "imports": [
+        {
+          "file": "vendor/react-runtime.js",
+          "names": [
+            "ReactDOM",
+            "ReactDefault",
+            "jsxRuntime"
+          ]
+        },
+        {
+          "file": "App.js",
+          "names": [
+            "App"
+          ]
+        }
+      ],
+      "exports": []
+    }
+  ]
+}

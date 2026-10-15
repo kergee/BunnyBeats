@@ -1,3 +1,7 @@
 *.mp3 filter=lfs diff=lfs merge=lfs -text
 *.MP3 filter=lfs diff=lfs merge=lfs -text
 *.webp filter=lfs diff=lfs merge=lfs -text
+
+# Preserve the immutable baseline byte-for-byte, including template-string CRLF.
+src/recovered/** -text
+tools/recovery/*.mjs text eol=lf

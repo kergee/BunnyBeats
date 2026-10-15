@@ -2,6 +2,11 @@ name: Build Tauri App
 
 on:
   workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing version tag, such as v0.1.6
+        required: true
+        type: string
   push:
     tags:
       - "v*"
@@ -10,9 +15,17 @@ permissions:
   contents: write
 
 jobs:
+  checks:
+    uses: ./.github/workflows/frontend-checks.yml
+    with:
+      ref: ${{ inputs.tag || github.ref }}
+      release_tag: ${{ inputs.tag || github.ref_name }}
+
   build:
+    needs: checks
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+      RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
 
     strategy:
       fail-fast: false
@@ -32,6 +45,7 @@ jobs:
         uses: actions/checkout@v5
         with:
           lfs: true
+          ref: ${{ env.RELEASE_TAG }}
 
       - name: Fetch Git LFS assets
         run: git lfs pull
@@ -42,38 +56,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
+          cache: npm
 
-      - name: Validate JSON data files
-        shell: bash
-        run: |
-          node -e "JSON.parse(require('fs').readFileSync('songs.json', 'utf8'))" \
-            && echo "songs.json OK"
-          node -e "JSON.parse(require('fs').readFileSync('manifest.json', 'utf8'))" \
-            && echo "manifest.json OK"
-          node -e "JSON.parse(require('fs').readFileSync('src-tauri/tauri.conf.json', 'utf8'))" \
-            && echo "tauri.conf.json OK"
+      - name: Install frontend and desktop build tools
+        run: npm ci
 
-      - name: Validate Tauri PNG icons
-        run: |
-          node -e "const fs=require('fs');const png='89504e470d0a1a0a';for(const file of ['src-tauri/icons/32x32.png','src-tauri/icons/128x128.png','src-tauri/icons/128x128@2x.png']){const sig=fs.readFileSync(file).subarray(0,8).toString('hex');if(sig!==png)throw new Error(file+' is not a PNG file; got signature '+sig);console.log(file+' OK')}"
-
-      - name: Build dist folder (macOS/Linux)
-        if: runner.os != 'Windows'
-        run: |
-          rm -rf dist
-          mkdir dist
-          rsync -a --delete --exclude src-tauri --exclude dist --exclude .git --exclude .github ./ dist/
-
-      - name: Build dist folder (Windows)
-        if: runner.os == 'Windows'
-        shell: pwsh
-        run: |
-          if (Test-Path dist) { Remove-Item dist -Recurse -Force }
-          New-Item -ItemType Directory -Path dist | Out-Null
-          robocopy . dist /E /XD src-tauri dist .git .github
-          if ($LASTEXITCODE -gt 7) { exit $LASTEXITCODE }
-          exit 0
+      - name: Validate release version and input files
+        run: npm run check:release
 
       - name: Install Linux dependencies
         if: runner.os == 'Linux'
@@ -86,7 +76,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tagName: ${{ github.ref_name }}
-          releaseName: "BunnyBeats ${{ github.ref_name }}"
+          args: --ci -- --locked
+          tagName: ${{ env.RELEASE_TAG }}
+          releaseName: "BunnyBeats ${{ env.RELEASE_TAG }}"
           releaseDraft: true
           prerelease: false

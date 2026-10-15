@@ -4,8 +4,18 @@
 # Local build artifacts
 dist/
 release/
+node_modules/
+vite-dev.*.log
 
 # Tauri / Rust
 src-tauri/target/
 src-tauri/gen/schemas
 README.md
+
+# Local reverse-engineering snapshots, raw tool output, and browser evidence
+/recovery/
+
+# Test output and local song-library backups
+/test-results/
+/playwright-report/
+/.bunnybeats-backups/

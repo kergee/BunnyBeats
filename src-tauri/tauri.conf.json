@@ -1,11 +1,13 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "BunnyBeats",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "identifier": "com.bunnybeats.desktop",
   "build": {
+    "beforeDevCommand": "npm run dev:tauri",
+    "beforeBuildCommand": "npm run build",
     "frontendDist": "../dist",
-    "devUrl": "http://localhost:8080"
+    "devUrl": "http://127.0.0.1:8080"
   },
   "app": {
     "windows": [
