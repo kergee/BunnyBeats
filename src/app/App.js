@@ -1,9 +1,10 @@
+import { ArtScene } from '../art/ArtScene.js';
 import { React, ReactDefault, jsxRuntime } from "../recovered/vendor/react-runtime.js";
 import { XIcon } from "../recovered/vendor/icons.js";
 import { LyricsPanel } from "../recovered/components/LyricsPanel.js";
 import { VinylRecord } from "../recovered/visualizers/VinylRecord.js";
-import { isDarkTheme, isFullscreenTheme } from "../recovered/themes/themeRegistry.js";
-import { PlayerControls } from "../recovered/components/PlayerControls.js";
+import { isDarkTheme, isFullscreenTheme, isArtTheme } from "../art/registry.js";
+import { PlayerControls } from "./PlayerControls.js";
 import { ParticleCover } from "../recovered/visualizers/ParticleCover.js";
 import { ParticleSettings } from "../recovered/settings/ParticleSettings.js";
 import { CubesVisualizer } from "../recovered/visualizers/CubesVisualizer.js";
@@ -12,7 +13,7 @@ import { DEFAULT_VINYL_PARAMS, VinylSettings } from "../recovered/settings/Vinyl
 import { PowerpuffRun } from "../recovered/visualizers/PowerpuffRun.js";
 import { DEFAULT_POWERPUFF_PARAMS, PowerpuffSettings } from "../recovered/settings/PowerpuffSettings.js";
 import { PlaylistDrawer } from "../recovered/components/PlaylistDrawer.js";
-import { ThemeDrawer } from "../recovered/components/ThemeDrawer.js";
+import { ThemeDrawer } from "./ThemeDrawer.js";
 import { getDefaultSong, getSongById, songs } from "../recovered/data/songs.js";
 import { useSongLyrics } from "../lyrics/useSongLyrics";
 import { LyricsNotice } from "../lyrics/LyricsNotice.js";
@@ -679,8 +680,8 @@ const App = () => {
         setPlaylistOpen(!0);
       }, 4e3);
     };
-    return window.addEventListener("mousemove", j), j(), () => {
-      window.removeEventListener("mousemove", j), W.current && clearTimeout(W.current);
+    return window.addEventListener("pointermove", j), window.addEventListener("pointerdown", j), j(), () => {
+      window.removeEventListener("pointermove", j), window.removeEventListener("pointerdown", j), W.current && clearTimeout(W.current);
     };
   }, []), React.useLayoutEffect(() => {
     if (theme !== "vinyl") return;
@@ -714,7 +715,7 @@ const App = () => {
     style: {
       height: "var(--app-height, 100vh)"
     },
-    children: [jsxRuntime.jsx(LyricsNotice, { error: lyricsError, onRetry: retryLyrics }), jsxRuntime.jsx("div", {
+    children: [!isArtTheme(theme) && jsxRuntime.jsx(LyricsNotice, { error: lyricsError, onRetry: retryLyrics }), jsxRuntime.jsx("div", {
       "aria-hidden": "true",
       className: `hidden sm:block absolute inset-0 z-0 bg-cover bg-center scale-125 origin-top-right transition-opacity transition-transform duration-1000 ${theme === "vinyl" ? "opacity-25" : "opacity-0"}`,
       style: {
@@ -732,7 +733,9 @@ const App = () => {
       onEnded: Tt,
       crossOrigin: "anonymous",
       preload: "metadata"
-    }), theme === "particle" && jsxRuntime.jsxs("div", {
+    }), isArtTheme(theme) && jsxRuntime.jsx(ArtScene, {
+      id: theme, analyser, playing: isPlaying, coverUrl: currentSong.coverUrl, title: currentSong.title, lyric: currentLyric, error: lyricsError, onRetry: retryLyrics, uiHidden: isPlaylistOpen, blocked: isThemeOpen || isUIHidden, bottomInset: controlsBottomInset
+    }, theme), theme === "particle" && jsxRuntime.jsxs("div", {
       className: "absolute inset-0 z-10 overflow-hidden bg-black",
       children: [jsxRuntime.jsx(ParticleCover, {
         analyser: analyser,
