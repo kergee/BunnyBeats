@@ -163,29 +163,34 @@ export function textTargets(text, w, h, count, density = 1, bottomInset = 140) {
   });
   const top = Math.min(132, h * .35), bottom = Math.max(top + 24, h - Math.max(120, bottomInset + 24));
   const available = bottom - top, centerY = (top + bottom) / 2;
-  let font = Math.min(88, w * .12),
-    layout;
-  const fits = () => layout.fits && font * (1 + Math.max(0, layout.lines.length - 1) * 1.38) <= available;
-  const setFont = () => {
+  let font = Math.min(88, w * .12), layout, inkTop, inkBottom;
+  ctx.textBaseline = 'alphabetic';
+  const measureLayout = () => {
     ctx.font = `600 ${font}px "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif`;
+    layout = wrapText(text, s => ctx.measureText(s).width, w * .8);
+    inkTop = 0; inkBottom = 0;
+    layout.lines.forEach((line, i) => {
+      const metrics = ctx.measureText(line), baseline = i * font * 1.38;
+      const ascent = Number.isFinite(metrics.actualBoundingBoxAscent) ? metrics.actualBoundingBoxAscent : font;
+      const descent = Number.isFinite(metrics.actualBoundingBoxDescent) ? metrics.actualBoundingBoxDescent : font * .3;
+      inkTop = Math.min(inkTop, baseline - ascent);
+      inkBottom = Math.max(inkBottom, baseline + descent);
+    });
   };
-  do {
-    setFont();
-    layout = wrapText(text, s => ctx.measureText(s).width, w * .8);
-    if (fits()) break;
-    font -= 1;
-  } while (font > 8);
-  // Very long lines scale further rather than silently dropping lyric characters.
-  while (!fits() && font > 1) {
-    font *= .85;
-    setFont();
-    layout = wrapText(text, s => ctx.measureText(s).width, w * .8);
+  // Font fallback metrics differ across Windows, Linux and macOS. Reserve the
+  // actual glyph ink plus the particle radius, rather than an assumed em box.
+  const fits = () => layout.fits && inkBottom - inkTop <= available - 4;
+  for (;;) {
+    measureLayout();
+    if (fits() || font <= 1) break;
+    // Very long lines scale further rather than dropping lyric characters.
+    font = font > 8 ? font - 1 : font * .85;
   }
   const lineHeight = font * 1.38;
   ctx.fillStyle = 'white';
   ctx.textAlign = 'center';
-  ctx.textBaseline = 'middle';
-  layout.lines.forEach((line, i) => ctx.fillText(line, w * .5, centerY + (i - (layout.lines.length - 1) / 2) * lineHeight));
+  const firstBaseline = top + (available - (inkBottom - inkTop)) / 2 - inkTop;
+  layout.lines.forEach((line, i) => ctx.fillText(line, w * .5, firstBaseline + i * lineHeight));
   const points = samplePixels(ctx.getImageData(0, 0, canvas.width, canvas.height).data, canvas.width, canvas.height, Math.max(2, Math.round(4 / density)), count);
   return {
     points,
